@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "h1": "Agustin Castets",
+        "h2": "Desarrollador Full Stack",
+        "h3": "Sobre mi",
+        "describe": "Desarrollador full stack apasionado por la creación de aplicaciones web. Actualmente en busca de oportunidades para seguir desarrollando mis habilidades en un entorno profesional.",
+        "btnHeader" : {
+            "btnEmail": "Copiar email",
+            "btnCv": "Curriculum",
+            "toast": {
+                "title": "Email copiado!"
+            }
+        },
+        "btnType": {
+            "theme": "Tema",
+            "lang": "Idioma",
+            "labels": {
+                "en": "Ingles",
+                "es": "Español"
+            }
+        },
+        "email": "aguscastets@gmail.com"
+    }
+}
