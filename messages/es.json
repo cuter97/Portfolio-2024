@@ -4,7 +4,7 @@
         "h2": "Desarrollador Full Stack",
         "h3": "Sobre mi",
         "describe": "Desarrollador full stack apasionado por la creación de aplicaciones web. Actualmente en busca de oportunidades para seguir desarrollando mis habilidades en un entorno profesional.",
-        "btnHeader" : {
+        "btnHeader": {
             "btnEmail": "Copiar email",
             "btnCv": "Curriculum",
             "toast": {
@@ -20,5 +20,36 @@
             }
         },
         "email": "aguscastets@gmail.com"
+    },
+    "Experience": {
+        "h3": "Experiencia",
+        "cards": [
+            {
+                "title": "Desarrollador Junior Full Stack",
+                "company": "DevtionIT",
+                "linkCompany": "https://devtionit.com",
+                "date": "Jul 2022 - Feb 2023",
+                "summary": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. Colaboración con el equipo para implementar nuevas funciones y corregir errores.",
+                "responsibilities": [
+                    "Desarrollé y mantuve interfaces de usuario interactivas utilizando React.js.",
+                    "Colaboré con diseñadores para traducir diseños de usuario en código funcional y estilizado.",
+                    "Implementé prácticas de desarrollo ágil para mejorar la eficiencia del equipo y la calidad del producto final."
+                ],
+                "achievements": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. Colaboración con el equipo para implementar nuevas funciones y corregir errores."
+            },
+            {
+                "title": "Desarrollador Full Stack",
+                "company": "TrainingPeek",
+                "linkCompany": "https://trainingpeek.com",
+                "date": "Feb 2024 - May 2024",
+                "summary": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend.",
+                "responsibilities": [
+                    "Desarrollé y diseñé una aplicación web utilizando Next.js para entrenamiento personalizado.",
+                    "Implementé el backend para gestionar usuarios y pagos utilizando la API de MercadoPago.",
+                    "Diseñé y desarrollé la interfaz de usuario, asegurando una experiencia fluida y receptiva."
+                ],
+                "achievements": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend."
+            }
+        ]
     }
 }

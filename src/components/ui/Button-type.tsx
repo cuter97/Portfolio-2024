@@ -13,21 +13,22 @@ import { Check, Mail } from "lucide-react";
 interface ButtonTypeBase {
     name: string;
     Icon?: JSX.Element;
+    tooltip?: string;
 }
 
 interface ButtonWithLink extends ButtonTypeBase {
-    type: "link";
-    link: string; 
+    type: "link" | "link-card";
+    link: string;
 }
 
 interface ButtonWithoutLink extends ButtonTypeBase {
-    type: "email" | "cv"; 
-    link?: string; 
+    type: "email" | "cv";
+    link?: string;
 }
 
 type ButtonTypeProps = ButtonWithLink | ButtonWithoutLink;
 
-export const ButtonType = ({ name, link, Icon, type }: ButtonTypeProps) => {
+export const ButtonType = ({ name, link, Icon, type, tooltip }: ButtonTypeProps) => {
     const t = useTranslations('Header');
 
     const [copied, setCopied] = useState(false);
@@ -61,6 +62,16 @@ export const ButtonType = ({ name, link, Icon, type }: ButtonTypeProps) => {
                         </Button>
                     }
                     {
+                        type === 'link-card' &&
+                        <Button asChild variant="link" className="text-orange-600 px-2">
+                            {
+                                <Link href={link!} target="_blank" >
+                                    {name}{Icon}
+                                </Link>
+                            }
+                        </Button>
+                    }
+                    {
                         type === 'email' &&
                         <Button asChild onClick={handleCopy} variant={copied ? "success" : "icon"} size="icon">
                             {!copied ? (
@@ -82,7 +93,7 @@ export const ButtonType = ({ name, link, Icon, type }: ButtonTypeProps) => {
                     }
                 </TooltipTrigger>
                 <TooltipContent>
-                    <p>{name}</p>
+                    <p>{tooltip ? tooltip : name}</p>
                 </TooltipContent>
             </Tooltip>
         </TooltipProvider>

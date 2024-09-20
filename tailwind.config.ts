@@ -1,3 +1,4 @@
+import { ColorWheelIcon } from "@radix-ui/react-icons";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
