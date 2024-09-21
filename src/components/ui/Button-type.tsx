@@ -63,7 +63,7 @@ export const ButtonType = ({ name, link, Icon, type, tooltip }: ButtonTypeProps)
                     }
                     {
                         type === 'link-card' &&
-                        <Button asChild variant="link" className="text-orange-600 px-2">
+                        <Button asChild variant="link" className="text-orange-600 px-1">
                             {
                                 <Link href={link!} target="_blank" >
                                     {name}{Icon}
