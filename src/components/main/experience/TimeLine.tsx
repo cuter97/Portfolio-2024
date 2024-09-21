@@ -5,7 +5,7 @@ interface TimelineProps {
 
 export const TimeLine = ({ date, children }: TimelineProps) => {
     return (
-        <div className="flex">
+        <li className="flex">
             <div className="w-24 flex-shrink-0 text-sm text-gray-500 relative">
                 <div className="pt-2">
                     {date}
@@ -15,6 +15,6 @@ export const TimeLine = ({ date, children }: TimelineProps) => {
             </div>
 
             {children}
-        </div>
+        </li>
     )
 }

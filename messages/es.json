@@ -23,33 +23,34 @@
     },
     "Experience": {
         "h3": "Experiencia",
-        "cards": [
-            {
+        "cardExperience": {
+            "summary": "Resumen",
+            "responsibilities": "Responsabilidades",
+            "achievements": "Logros",
+            "btnLess": "Ver Menos",
+            "btnMore": "Ver Mas"
+        },
+        "cards": {
+            "cardOne": {
                 "title": "Desarrollador Junior Full Stack",
                 "company": "DevtionIT",
                 "linkCompany": "https://devtionit.com",
-                "date": "Jul 2022 - Feb 2023",
+                "date": "Jul 2022 Feb 2023",
+                "site": "Buenos Aires, Argentina - Remote",
                 "summary": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. Colaboración con el equipo para implementar nuevas funciones y corregir errores.",
-                "responsibilities": [
-                    "Desarrollé y mantuve interfaces de usuario interactivas utilizando React.js.",
-                    "Colaboré con diseñadores para traducir diseños de usuario en código funcional y estilizado.",
-                    "Implementé prácticas de desarrollo ágil para mejorar la eficiencia del equipo y la calidad del producto final."
-                ],
-                "achievements": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. Colaboración con el equipo para implementar nuevas funciones y corregir errores."
+                "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
+                "achievements": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. :: Colaboración con el equipo para implementar nuevas funciones y corregir errores."
             },
-            {
+            "cardTwo": {
                 "title": "Desarrollador Full Stack",
                 "company": "TrainingPeek",
                 "linkCompany": "https://trainingpeek.com",
-                "date": "Feb 2024 - May 2024",
+                "date": "Feb 2024 May 2024",
+                "site": "Rio Negro, Argentina - Remote",
                 "summary": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend.",
-                "responsibilities": [
-                    "Desarrollé y diseñé una aplicación web utilizando Next.js para entrenamiento personalizado.",
-                    "Implementé el backend para gestionar usuarios y pagos utilizando la API de MercadoPago.",
-                    "Diseñé y desarrollé la interfaz de usuario, asegurando una experiencia fluida y receptiva."
-                ],
+                "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
                 "achievements": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend."
             }
-        ]
+        }
     }
 }

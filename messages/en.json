@@ -23,33 +23,34 @@
     },
     "Experience": {
         "h3": "Experience",
-        "cards": [
-            {
+        "cardExperience": {
+            "summary": "Summary",
+            "responsibilities": "Responsibilities",
+            "achievements": "Achievements",
+            "btnLess": "Show Less",
+            "btnMore": "Show More"
+        },
+        "cards": {
+            "cardOne": {
                 "title": "Junior Full Stack Developer",
                 "company": "DevtionIT",
                 "linkCompany": "https://devtionit.com",
-                "date": "Jul 2022 - Feb 2023",
+                "date": "Jul 2022 Feb 2023",
+                "site": "Buenos Aires, Argentina - Remote",
                 "summary": "Developed and maintained web applications using JavaScript, HTML, and CSS. Collaborated with the team to implement new features and fix bugs.",
-                "responsibilities": [
-                    "Developed and maintained interactive user interfaces using React.js.",
-                    "Collaborated with designers to translate user designs into functional and styled code.",
-                    "Implemented agile development practices to improve team efficiency and the quality of the final product."
-                ],
-                "achievements": "Developed and maintained web applications using JavaScript, HTML, and CSS. Collaborated with the team to implement new features and fix bugs."
+                "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
+                "achievements": "Developed and maintained web applications using JavaScript, HTML, and CSS. :: Collaborated with the team to implement new features and fix bugs."
             },
-            {
+            "cardTwo": {
                 "title": "Full Stack Developer",
                 "company": "TrainingPeek",
                 "linkCompany": "https://trainingpeek.com",
-                "date": "Feb 2024 - May 2024",
+                "site": "Rio Negro, Argentina - Remote",
+                "date": "Feb 2024 May 2024",
                 "summary": "Developed and maintained the trainingpeek.com application using Next.js for the frontend and Node.js for the backend.",
-                "responsibilities": [
-                    "Developed and designed a web application using Next.js for personalized training.",
-                    "Implemented the backend to manage users and payments using the MercadoPago API.",
-                    "Designed and developed the user interface, ensuring a smooth and responsive experience."
-                ],
+                "responsibilities": "Developed and designed a web application using Next.js for personalized training. :: Implemented the backend to manage users and payments using the MercadoPago API. :: Designed and developed the user interface, ensuring a smooth and responsive experience.",
                 "achievements": "Developed and maintained the trainingpeek.com application using Next.js for the frontend and Node.js for the backend."
             }
-        ]
+        }
     }
 }
