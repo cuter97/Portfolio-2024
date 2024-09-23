@@ -4,6 +4,7 @@ import { ButtonType } from "@/components/ui/Button-type";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card"
 import { ArrowUpRight, GitPullRequestIcon } from "lucide-react"
 import { useTranslations } from "next-intl";
+import { CardSheet } from "./CardSheet";
 
 interface Props {
     type: 'gitlink' | 'weblink';
@@ -57,7 +58,7 @@ export const CardProject = ({ type, title, link, summary, content, badgets }: Pr
                         <BadgeCardHover key={index} tecnology={badget} />
                     ))}
                 </div>
-                <Button variant="secondary" size="sm" className="text-primary ml-auto">Info</Button>
+                <CardSheet />
             </CardFooter>
         </Card>
     )

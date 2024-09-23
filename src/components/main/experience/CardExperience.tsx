@@ -63,16 +63,16 @@ export const CardExperience = ({ title, company, linkCompany, date, site, summar
                         <div>
 
                             <ul className="list-disc list-inside text-sm pl-4 space-y-1 marker:text-orange-600 text-muted-foreground">
-                                {responsibilitiesList.map((responsibility, index) => (
-                                    <li key={index}>{responsibility}</li>
+                                {responsibilitiesList.map((resp, index) => (
+                                    <li key={index}>{resp}</li>
                                 ))}
                             </ul>
 
-                            <h3 className="text-sm font-normal mb-1 mt-2">{t('responsibilities')}:</h3>
+                            <h3 className="text-sm font-normal mb-1 mt-2">{t('achievements')}:</h3>
 
                             <ul className="list-disc list-inside text-sm pl-4 space-y-1 marker:text-orange-600 text-muted-foreground">
-                                {achievementsList.map((responsibility, index) => (
-                                    <li key={index}>{responsibility}</li>
+                                {achievementsList.map((arch, index) => (
+                                    <li key={index}>{arch}</li>
                                 ))}
                             </ul>
                         </div>

@@ -8,7 +8,7 @@ export const ProjectsContainer = () => {
         <>
             <h3 className="text-3xl mb-6">Projects</h3>
 
-            <ul className="grid grid-cols-4 gap-3">
+            <ol className="grid grid-cols-4 gap-3">
                 {keys.map((key) => (
                     <CardProject
                         key={key}
@@ -31,7 +31,7 @@ export const ProjectsContainer = () => {
                         badgets={t(`cards.weblink.${key}.badgets`)}
                     />
                 ))}
-            </ul>
+            </ol>
         </>
     )
 }
