@@ -2,11 +2,16 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Badge } from "@/components/ui/badge"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
 import { CalendarDays } from "lucide-react"
-export const BadgeCardHover = () => {
+
+interface Props {
+    tecnology: string;
+}
+
+export const BadgeCardHover = ({ tecnology }: Props) => {
     return (
         <HoverCard>
             <HoverCardTrigger asChild>
-                <Badge variant="linkTwo">@nextjs</Badge>
+                <Badge variant="linkTwo">{tecnology}</Badge>
             </HoverCardTrigger>
             <HoverCardContent className="w-80">
                 <div className="flex justify-between space-x-4">

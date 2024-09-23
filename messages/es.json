@@ -52,5 +52,47 @@
                 "achievements": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend."
             }
         }
+    },
+    "Projects": {
+        "h3": "Proyectos",
+        "cardProject": {
+            "btnInfo": "Info",
+            "tooltiplink": "Ver Sitio Web",
+            "tooltipgit": "Ver Código"
+        },
+        "cards": {
+            "githublink": {
+                "cardOne": {
+                    "title": "Portfolio",
+                    "githubLink": "https://cuter97.github.io/portfolio-2024",
+                    "summary": "A portfolio website to showcase my projects and skills.",
+                    "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
+                    "badgets": "@Nextjs :: @Nodejs"
+                },
+                "cardTwo": {
+                    "title": "Portfolio",
+                    "githubLink": "https://cuter97.github.io/portfolio-2024",
+                    "summary": "A portfolio website to showcase my projects and skills.",
+                    "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
+                    "badgets": "@Nextjs :: @Nodejs"
+                }
+            },
+            "weblink": {
+                "cardOne": {
+                    "title": "Portfolio",
+                    "websiteLink": "https://cuter97.github.io/portfolio-2024",
+                    "summary": "A portfolio website to showcase my projects and skills.",
+                    "content": "Construido con Node.js y MongoDB. :: User authentication and CRUD operations",
+                    "badgets": "@Nextjs :: @Nodejs"
+                },
+                "cardTwo": {
+                    "title": "Portfolio",
+                    "websiteLink": "https://cuter97.github.io/portfolio-2024",
+                    "summary": "A portfolio website to showcase my projects and skills.",
+                    "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
+                    "badgets": "@Nextjs :: @Nodejs"
+                }
+            }
+        }
     }
 }

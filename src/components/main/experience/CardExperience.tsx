@@ -35,9 +35,15 @@ export const CardExperience = ({ title, company, linkCompany, date, site, summar
     return (
         <TimeLine date={date}>
             <div className="w-auto rounded-md bg-background pl-6 pb-6">
-                <h3 className="text-lg font-medium">{title} 
-                    <span className="text-xl ml-1">@</span>
-                    <ButtonType tooltip={`Ver ${company}`} name={company} type="link-card" link={linkCompany} Icon={<ArrowUpRight className="h-4 w-4 ml-1" />} />
+                <h3 className="text-lg font-medium">{title} {''}
+                    <span className="text-xl mr-1">@</span>
+                    <ButtonType
+                        tooltip={`Ver ${company}`}
+                        name={company}
+                        type="link-card"
+                        link={linkCompany}
+                        Icon={<ArrowUpRight className="h-4 w-4 ml-1" />}
+                    />
                 </h3>
                 <p className="text-sm text-muted-foreground">{site}</p>
 

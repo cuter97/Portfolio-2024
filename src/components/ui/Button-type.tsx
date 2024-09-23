@@ -7,13 +7,14 @@ import { useTranslations } from "next-intl";
 import { toast } from "sonner"
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "./tooltip";
-import { Button } from "./button";
+import { Button, ButtonProps } from "./button";
 import { Check, Mail } from "lucide-react";
 
 interface ButtonTypeBase {
     name: string;
     Icon?: JSX.Element;
     tooltip?: string;
+    variant?: ButtonProps["variant"];
 }
 
 interface ButtonWithLink extends ButtonTypeBase {
@@ -28,7 +29,7 @@ interface ButtonWithoutLink extends ButtonTypeBase {
 
 type ButtonTypeProps = ButtonWithLink | ButtonWithoutLink;
 
-export const ButtonType = ({ name, link, Icon, type, tooltip }: ButtonTypeProps) => {
+export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link" }: ButtonTypeProps) => {
     const t = useTranslations('Header');
 
     const [copied, setCopied] = useState(false);
@@ -47,50 +48,55 @@ export const ButtonType = ({ name, link, Icon, type, tooltip }: ButtonTypeProps)
         })
     };
 
+    const getButtonProps = (): Partial<ButtonProps> => {
+        switch (type) {
+            case "link":
+                return { asChild: true, variant: "icon", size: "icon" };
+            case "link-card":
+                return { asChild: true, variant, className: "px-0" };
+            case "email":
+                return { asChild: true, onClick: handleCopy, variant: copied ? "success" : "icon", size: "icon" };
+            case "cv":
+                return { asChild: true, variant: "icon", size: "icon" };
+            default:
+                return {};
+        }
+    };
+
+    const renderButtonContent = () => {
+        switch (type) {
+            case "link":
+                return (
+                    <Link href={link!} target="_blank" >
+                        {Icon}
+                    </Link>
+                )
+            case "link-card":
+                return (
+                    <Link href={link!} target="_blank">
+                        {name}{Icon}
+                    </Link>
+                );
+            case "email":
+                return !copied ? <Mail /> : <Check />;
+            case "cv":
+                return (
+                    <Link href="/pdf/curriculum.pdf" target="_blank">
+                        {Icon}
+                    </Link>
+                );
+            default:
+                return null;
+        }
+    };
+
     return (
         <TooltipProvider>
             <Tooltip>
                 <TooltipTrigger>
-                    {
-                        type === 'link' &&
-                        <Button asChild variant="icon" size="icon">
-                            {
-                                <Link href={link!} target="_blank" >
-                                    {Icon}
-                                </Link>
-                            }
-                        </Button>
-                    }
-                    {
-                        type === 'link-card' &&
-                        <Button asChild variant="link" className="text-orange-600 px-1">
-                            {
-                                <Link href={link!} target="_blank" >
-                                    {name}{Icon}
-                                </Link>
-                            }
-                        </Button>
-                    }
-                    {
-                        type === 'email' &&
-                        <Button asChild onClick={handleCopy} variant={copied ? "success" : "icon"} size="icon">
-                            {!copied ? (
-                                <Mail />
-                            ) : (
-                                <Check />
-                            )}
-                        </Button>
-                    }
-                    {
-                        type === 'cv' &&
-                        <Button asChild variant="icon" size="icon">
-                            {
-                                <Link href="/pdf/curriculum.pdf" target="_blank">
-                                    {Icon}
-                                </Link>
-                            }
-                        </Button>
-                    }
+                    <Button {...getButtonProps() as ButtonProps}>
+                        {renderButtonContent()}
+                    </Button>
                 </TooltipTrigger>
                 <TooltipContent>
                     <p>{tooltip ? tooltip : name}</p>
