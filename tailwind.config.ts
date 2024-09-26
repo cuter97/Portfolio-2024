@@ -12,6 +12,11 @@ const config: Config = {
 		extend: {
 			textColor: {
 				gray: 'hsl(var(--gray))',
+				ring: 'hsl(var(--ring))',
+				card: {
+					DEFAULT: 'hsl(var(--card))',
+					foreground: 'hsl(var(--card-foreground))'
+				},
 			},
 			colors: {
 				background: 'hsl(var(--background))',
@@ -67,5 +72,12 @@ const config: Config = {
 		}
 	},
 	plugins: [require("tailwindcss-animate")],
+	safelist: [
+		'group-hover:text-[#EA2857]',
+		'group-hover:text-[#417E38]',
+		'group-hover:text-[#2d79c6]',
+		'group-hover:text-[#61dbfb]',
+		'group-hover:text-primary',
+	]
 };
 export default config;

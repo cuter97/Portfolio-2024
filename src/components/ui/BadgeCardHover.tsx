@@ -1,33 +1,51 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { useTranslations } from "next-intl";
+
 import { Badge } from "@/components/ui/badge"
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { HoverCard, HoverCardContent, HoverCardTrigger } from "@/components/ui/hover-card"
+import { BadgeCardSkill } from "./BadgeCardSkill";
+
+import { technologies } from "@/config/technologies";
 import { CalendarDays } from "lucide-react"
 
 interface Props {
-    tecnology: string;
+    type: 'skill' | 'badge'
+    tecnology: keyof typeof technologies
 }
 
-export const BadgeCardHover = ({ tecnology }: Props) => {
+export const BadgeCardHover = ({ tecnology, type }: Props) => {
+    const t = useTranslations('Technologies');
+
+    const formattedTechnology = tecnology.trim().toLowerCase();
+    const techConfig = technologies[formattedTechnology];
+
+    if (!techConfig)      
+        return null;
+
     return (
         <HoverCard>
             <HoverCardTrigger asChild>
-                <Badge variant="linkTwo">{tecnology}</Badge>
+                {type === 'badge' ?
+                    <Badge variant="linkTwo">@{t(`${formattedTechnology}.name`)}</Badge>
+                    :
+                    <BadgeCardSkill tecnology={t(`${formattedTechnology}.name`)} Icon={techConfig.icon} color={techConfig.color} />
+                }
             </HoverCardTrigger>
             <HoverCardContent className="w-80">
                 <div className="flex justify-between space-x-4">
                     <Avatar className="w-12 h-12">
-                        <AvatarImage src="https://github.com/vercel.png" />
+                        <AvatarImage src={t(`${formattedTechnology}.image`)} />
                         <AvatarFallback>VC</AvatarFallback>
                     </Avatar>
                     <div className="space-y-1">
-                        <h4 className="text-sm font-semibold">@nextjs</h4>
+                        <h4 className="text-sm font-semibold">{t(`${formattedTechnology}.@name`)}</h4>
                         <p className="text-sm">
-                            The React Framework - created and maintained by @vercel.
+                            {t(`${formattedTechnology}.description`)}
                         </p>
                         <div className="flex items-center pt-2">
                             <CalendarDays className="mr-2 h-4 w-4 text-muted" />{" "}
                             <span className="text-xs text-muted">
-                                Joined December 2021
+                                {t(`${formattedTechnology}.joined`)}
                             </span>
                         </div>
                     </div>

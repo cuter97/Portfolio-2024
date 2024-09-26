@@ -55,7 +55,7 @@ export const CardProject = ({ type, title, link, summary, content, badgets }: Pr
             <CardFooter>
                 <div className="flex space-x-2">
                     {badgetList.map((badget, index) => (
-                        <BadgeCardHover key={index} tecnology={badget} />
+                        <BadgeCardHover type="badge" key={index} tecnology={badget} />
                     ))}
                 </div>
                 <CardSheet />
