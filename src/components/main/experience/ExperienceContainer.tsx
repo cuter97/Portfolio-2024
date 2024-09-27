@@ -1,16 +1,17 @@
 import { useTranslations } from "next-intl";
 import { CardExperience } from "./CardExperience";
 
-export const ExperienceContainer = () => {
+interface Props {
+    exp: string[];
+}
+
+export const ExperienceContainer = ({ exp }: Props) => {
     const t = useTranslations('Experience');
-
-    const keys = ['cardOne', 'cardTwo'] as const;
-
     return (
         <>
             <h3 className="text-3xl mb-6">{t('h3')}</h3>
-            <ul className="mb-12">
-                {keys.map((key) => (
+            <ul className="mb-16">
+                {exp.map((key) => (
                     <CardExperience
                         key={key}
                         title={t(`cards.${key}.title`)}

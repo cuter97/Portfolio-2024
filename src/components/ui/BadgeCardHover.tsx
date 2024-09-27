@@ -14,7 +14,7 @@ interface Props {
 }
 
 export const BadgeCardHover = ({ tecnology, type }: Props) => {
-    const t = useTranslations('Technologies');
+    const t = useTranslations('Technologies.skills');
 
     const formattedTechnology = tecnology.trim().toLowerCase();
     const techConfig = technologies[formattedTechnology];
@@ -26,7 +26,7 @@ export const BadgeCardHover = ({ tecnology, type }: Props) => {
         <HoverCard>
             <HoverCardTrigger asChild>
                 {type === 'badge' ?
-                    <Badge variant="linkTwo">@{t(`${formattedTechnology}.name`)}</Badge>
+                    <Badge variant="destructive">@{t(`${formattedTechnology}.name`)}</Badge>
                     :
                     <BadgeCardSkill tecnology={t(`${formattedTechnology}.name`)} Icon={techConfig.icon} color={techConfig.color} />
                 }

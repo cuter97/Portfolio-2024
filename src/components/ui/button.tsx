@@ -21,7 +21,7 @@ const buttonVariants = cva(
                     "hover:bg-accent hover:text-accent-foreground",
                 link:
                     "text-lg underline underline-offset-4 hover:decoration-dotted text-orange-600",
-                linkcolor:
+                linkcolorless:
                     "text-lg hover:underline hover:decoration-dotted hover:underline-offset-4 hover:text-orange-600",
                 icon:
                     "bg-transparent text-orange-600 hover:bg-orange-600 hover:text-white duration-500",

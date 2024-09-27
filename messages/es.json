@@ -97,40 +97,42 @@
     },
     "Technologies": {
         "h3": "Skills",
-        "nestjs": {
-            "name": "Nest.js",
-            "@name": "@nestjs",
-            "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
-            "description": "A progressive Node.js framework for building scalable server-side apps.",
-            "joined": "Joined December 2017"
-        },
-        "nodejs": {
-            "name": "Node.js",
-            "@name": "@nodejs",
-            "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
-            "description": "A JavaScript runtime built on Chrome's V8 engine, enabling server-side execution of JavaScript.",
-            "joined": "Joined May 2009"
-        },
-        "typescript": {
-            "name": "Typescript",
-            "@name": "@typescript",
-            "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
-            "description": "A superset of JavaScript that adds static typing, enhancing developer productivity and code quality.",
-            "joined": "Joined October 2012"
-        },
-        "reactjs": {
-            "name": "React.js",
-            "@name": "@reactjs",
-            "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
-            "description": "A JavaScript library for building user interfaces, developed and maintained by Meta (Facebook).",
-            "joined": "Joined May 2013"
-        },
-        "nextjs": {
-            "name": "Next.js",
-            "@name": "@nextjs",
-            "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
-            "description": "A React-based framework for building server-side rendered applications.",
-            "joined": "Joined May 2018"
+        "skills": {
+            "nestjs": {
+                "name": "Nest.js",
+                "@name": "@nestjs",
+                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
+                "description": "A progressive Node.js framework for building scalable server-side apps.",
+                "joined": "Joined December 2017"
+            },
+            "nodejs": {
+                "name": "Node.js",
+                "@name": "@nodejs",
+                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
+                "description": "A JavaScript runtime built on Chrome's V8 engine, enabling server-side execution of JavaScript.",
+                "joined": "Joined May 2009"
+            },
+            "typescript": {
+                "name": "Typescript",
+                "@name": "@typescript",
+                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
+                "description": "A superset of JavaScript that adds static typing, enhancing developer productivity and code quality.",
+                "joined": "Joined October 2012"
+            },
+            "reactjs": {
+                "name": "React.js",
+                "@name": "@reactjs",
+                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
+                "description": "A JavaScript library for building user interfaces, developed and maintained by Meta (Facebook).",
+                "joined": "Joined May 2013"
+            },
+            "nextjs": {
+                "name": "Next.js",
+                "@name": "@nextjs",
+                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
+                "description": "A React-based framework for building server-side rendered applications.",
+                "joined": "Joined May 2018"
+            }
         }
     }
 }

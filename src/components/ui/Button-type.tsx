@@ -15,6 +15,7 @@ interface ButtonTypeBase {
     Icon?: JSX.Element;
     tooltip?: string;
     variant?: ButtonProps["variant"];
+    size?: ButtonProps["size"];
 }
 
 interface ButtonWithLink extends ButtonTypeBase {
@@ -29,7 +30,7 @@ interface ButtonWithoutLink extends ButtonTypeBase {
 
 type ButtonTypeProps = ButtonWithLink | ButtonWithoutLink;
 
-export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link" }: ButtonTypeProps) => {
+export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link", size }: ButtonTypeProps) => {
     const t = useTranslations('Header');
 
     const [copied, setCopied] = useState(false);

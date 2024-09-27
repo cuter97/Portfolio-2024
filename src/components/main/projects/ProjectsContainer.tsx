@@ -1,15 +1,19 @@
 import { useTranslations } from "next-intl";
 import { CardProject } from "./CardProject"
 
-export const ProjectsContainer = () => {
+interface Props {
+    gitLinks: string[];
+    webLinks: string[];
+}
+
+export const ProjectsContainer = ({ gitLinks, webLinks }: Props) => {
     const t = useTranslations('Projects');
-    const keys = ['cardOne', 'cardTwo'] as const;
     return (
         <>
             <h3 className="text-3xl mb-6">Projects</h3>
 
-            <div className="grid grid-cols-4 gap-3 mb-12">
-                {keys.map((key) => (
+            <div className="grid grid-cols-4 gap-3 mb-16">
+                {gitLinks.map((key) => (
                     <CardProject
                         key={key}
                         type="gitlink"
@@ -20,7 +24,7 @@ export const ProjectsContainer = () => {
                         badgets={t(`cards.githublink.${key}.badgets`)}
                     />
                 ))}
-                {keys.map((key) => (
+                {webLinks.map((key) => (
                     <CardProject
                         key={key}
                         type="weblink"

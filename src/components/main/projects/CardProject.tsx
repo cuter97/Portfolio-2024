@@ -1,5 +1,4 @@
 import { BadgeCardHover } from "@/components/ui/BadgeCardHover"
-import { Button } from "@/components/ui/button"
 import { ButtonType } from "@/components/ui/Button-type";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card"
 import { ArrowUpRight, GitPullRequestIcon } from "lucide-react"
@@ -28,7 +27,7 @@ export const CardProject = ({ type, title, link, summary, content, badgets }: Pr
                     {type !== 'weblink' ? title :
                         <ButtonType
                             tooltip={t('tooltiplink')}
-                            variant="linkcolor"
+                            variant="linkcolorless"
                             name={title}
                             type="link-card"
                             link={link}
