@@ -134,5 +134,45 @@
                 "joined": "Joined May 2018"
             }
         }
+    },
+   "Education": {
+        "h3": "Education",
+        "h4": "Certifications",
+        "tooltipCourse": "View course",
+        "tooltipUniversity": "View carrer",
+        "university": {
+            "one": {
+                "establishment": "Universidad Nacional de Rio Negro",
+                "carrer": "Ingenieria de Software",
+                "time": "2017 - 2023",
+                "link": "https://github.com/cuter97"
+            },
+            "two": {
+                "establishment": "Universidad Nacional de Rio Negro",
+                "carrer": "Ingenieria de Software",
+                "time": "2017 - 2023",
+                "link": "https://github.com/cuter97"
+            }
+        },
+        "certification": {
+            "one": {
+                "establishment": "Platzi",
+                "carrer": "Frontend Developer",
+                "time": "2022",
+                "link": "https://github.com/cuter97"
+            },
+            "two": {
+                "establishment": "Platzi",
+                "carrer": "Frontend Developer",
+                "time": "2022",
+                "link": "https://github.com/cuter97"
+            },
+            "three": {
+                "establishment": "Platzi",
+                "carrer": "Frontend Developer",
+                "time": "2022",
+                "link": "https://github.com/cuter97"
+            }
+        }
     }
 }

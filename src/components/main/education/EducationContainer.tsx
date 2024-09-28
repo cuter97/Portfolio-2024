@@ -1,26 +1,39 @@
+import { useTranslations } from "next-intl";
 import { EducationLink } from "./EducationLink"
 
-export const EducationContainer = () => {
+interface Props {
+    university: string[];
+    certification: string[];
+}
+
+export const EducationContainer = ({ university, certification }: Props) => {
+    const t = useTranslations('Education');
     return (
         <div className="mb-16 space-y-8">
-            <h3 className="text-3xl mb-6">Education</h3>
-            <EducationLink
-                establishment="Universidad Nacional de Rio Negro"
-                carrer="Ingenieria de Software"
-                time="2017 - 2023"
-                link="https://github.com/cuter97"
-                type="university"
-                tooltip="Ver carrera"
-            />
-            <h4 className="text-xl font-medium mb-2">Certifications</h4>
-            <EducationLink
-                establishment="Platzi"
-                carrer="Frontend Developer"
-                time="2022"
-                link="https://github.com/cuter97"
-                type="certification"
-                tooltip="Ver curso"
-            />
+            <h3 className="text-3xl mb-6">{t('h3')}</h3>
+            {university.map((key) => (
+                <EducationLink
+                    key={key}
+                    establishment={t(`university.${key}.establishment`)}
+                    carrer={t(`university.${key}.carrer`)}
+                    time={t(`university.${key}.time`)}
+                    link={t(`university.${key}.link`)}
+                    type="university"
+                    tooltip={t(`tooltipUniversity`)}
+                />
+            ))}
+            <h4 className="text-xl font-medium mb-2">{t('h4')}</h4>
+            {certification.map((key) => (
+                <EducationLink
+                    key={key}
+                    establishment={t(`certification.${key}.establishment`)}
+                    carrer={t(`certification.${key}.carrer`)}
+                    time={t(`certification.${key}.time`)}
+                    link={t(`certification.${key}.link`)}
+                    type="certification"
+                    tooltip={t(`tooltipCourse`)}
+                />
+            ))}
         </div>
     )
 }

@@ -8,18 +8,22 @@ interface Props {
     className: string;
 }
 
-export const MainContent = async({ className }: Props) => {
-    const dataGit = await JsonData('Projects.cards.githublink');
-    const dataWeb = await JsonData('Projects.cards.weblink');
-    const dataSkills = await JsonData('Technologies.skills');
-    const dataExp = await JsonData('Experience.cards');
-    
+export const MainContent = async ({ className }: Props) => {
+    const [dataGit, dataWeb, dataSkills, dataExp, uni, cert] = await Promise.all([
+        JsonData('Projects.cards.githublink'),
+        JsonData('Projects.cards.weblink'),
+        JsonData('Technologies.skills'),
+        JsonData('Experience.cards'),
+        JsonData('Education.university'),
+        JsonData('Education.certification'),
+    ]);
+
     return (
         <div className={className}>
-            <ExperienceContainer exp={dataExp}/>
-            <ProjectsContainer gitLinks={dataGit} webLinks={dataWeb}/>
-            <EducationContainer />
-            <SkillsContainer skills={dataSkills}/>
+            <ExperienceContainer exp={dataExp} />
+            <ProjectsContainer gitLinks={dataGit} webLinks={dataWeb} />
+            <SkillsContainer skills={dataSkills} />
+            <EducationContainer certification={cert} university={uni} />
         </div>
     );
 }
