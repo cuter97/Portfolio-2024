@@ -9,9 +9,7 @@ interface Props {
 }
 
 export const MainContent = async ({ className }: Props) => {
-    const [dataGit, dataWeb, dataSkills, dataExp, uni, cert] = await Promise.all([
-        JsonData('Projects.cards.githublink'),
-        JsonData('Projects.cards.weblink'),
+    const [dataSkills, dataExp, uni, cert] = await Promise.all([
         JsonData('Technologies.skills'),
         JsonData('Experience.cards'),
         JsonData('Education.university'),
@@ -21,7 +19,7 @@ export const MainContent = async ({ className }: Props) => {
     return (
         <div className={className}>
             <ExperienceContainer exp={dataExp} />
-            <ProjectsContainer gitLinks={dataGit} webLinks={dataWeb} />
+            <ProjectsContainer />
             <SkillsContainer skills={dataSkills} />
             <EducationContainer certification={cert} university={uni} />
         </div>

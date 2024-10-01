@@ -6,45 +6,40 @@ import { useTranslations } from "next-intl";
 import { CardSheet } from "./CardSheet";
 
 interface Props {
-    type: 'gitlink' | 'weblink';
-    title: string;
-    link: string;
-    summary: string;
-    content: string;
-    badgets: string;
+    data: string;
 }
 
-export const CardProject = ({ type, title, link, summary, content, badgets }: Props) => {
-    const t = useTranslations('Projects.cardProject');
+export const CardProject = ({ data }: Props) => {
+    const t = useTranslations(`Projects.cards.${data}`);
+    const card = useTranslations('Projects.cardProject');
 
-    const contentList = content.split('::').map(item => item.trim());
-    const badgetList = badgets.split('::').map(item => item.trim());
+    const contentList = t('content').split('::').map(item => item.trim());
+    const badgetList = t('badgets').split('::').map(item => item.trim());
 
     return (
         <Card className="col-span-2">
             <CardHeader>
                 <CardTitle className="flex items-center justify-between">
-                    {type !== 'weblink' ? title :
+                    {t('links.web') === '' ? t('title') :
                         <ButtonType
-                            tooltip={t('tooltiplink')}
+                            tooltip={card('tooltiplink')}
                             variant="linkcolorless"
-                            name={title}
+                            name={t('title')}
                             type="link-card"
-                            link={link}
+                            link={t('links.web')}
                             Icon={<ArrowUpRight className="h-4 w-4 ml-1 text-orange-600" />}
                         />}
-                    {type === 'gitlink' &&
+                    {t('links.git') !== '' &&
                         <ButtonType
-                            name={t('tooltipgit')}
+                            name={card('tooltipgit')}
                             type="link"
-                            link={link}
+                            link={t('links.git')}
                             Icon={<GitPullRequestIcon className="w-4 h-4" />}
                         />}
-
                 </CardTitle>
             </CardHeader>
             <CardContent>
-                <p className="mb-2">{summary}</p>
+                <p className="mb-2">{t('summary')}</p>
                 <ul className="text-sm text-muted-foreground list-disc list-inside">
                     {contentList.map((cont, index) => (
                         <li key={index}>{cont}</li>
@@ -57,7 +52,7 @@ export const CardProject = ({ type, title, link, summary, content, badgets }: Pr
                         <BadgeCardHover type="badge" key={index} tecnology={badget} />
                     ))}
                 </div>
-                <CardSheet />
+                <CardSheet i18nKey={data}/>
             </CardFooter>
         </Card>
     )
