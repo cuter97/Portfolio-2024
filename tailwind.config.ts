@@ -1,4 +1,3 @@
-import { ColorWheelIcon } from "@radix-ui/react-icons";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -66,8 +65,8 @@ const config: Config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			backgroundImage: {
-				'custom-gradient-h': 'linear-gradient(180deg, rgba(79,70,229,0.3) 10%, rgba(79,70,229,1) 30%, rgba(79,70,229,1) 70%, rgba(79,70,229,0.3) 90%)',
-				'custom-gradient-v': 'linear-gradient(90deg, rgba(79,70,229,0.3) 10%, rgba(79,70,229,1) 30%, rgba(79,70,229,1) 70%, rgba(79,70,229,0.3) 90%)'
+				'custom-gradient-h': 'linear-gradient(180deg, rgba(194,65,12,0.3) 10%, rgba(194,65,12,1) 30%, rgba(194,65,12,1) 70%, rgba(194,65,12,0.3) 90%)',
+				'custom-gradient-v': 'linear-gradient(90deg, rgba(194,65,12,0.3) 10%, rgba(194,65,12,1) 30%, rgba(194,65,12,1) 70%, rgba(194,65,12,0.3) 90%)'
 			}
 		}
 	},

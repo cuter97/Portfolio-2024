@@ -223,5 +223,10 @@
                 "link": "https://github.com/cuter97"
             }
         }
+    },
+    "Footer": {
+        "h3": "¿Talk later?",
+        "mail": "aguscastets@gmail.com",
+        "copyright": "Portfolio made by Agustin Castets. Building software with ♥ from Bariloche to the world."
     }
 }
