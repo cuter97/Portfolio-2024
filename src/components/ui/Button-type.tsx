@@ -74,8 +74,8 @@ export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link" }
                 )
             case "link-card":
                 return (
-                    <Link href={link!} target="_blank">
-                        {name}{Icon}
+                    <Link href={link!} target="_blank" className="group">
+                        {name}<span className="group-hover:animate-bounce">{Icon}</span>
                     </Link>
                 );
             case "email":

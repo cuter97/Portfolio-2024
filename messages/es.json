@@ -186,10 +186,13 @@
         }
     },
     "Education": {
-        "h3": "Education",
-        "h4": "Certifications",
-        "tooltipCourse": "View course",
-        "tooltipUniversity": "View carrer",
+        "h3": "Educación",
+        "h4": "Certificaciones",
+        "h5": "Todas mis certificaciones en mi",
+        "driveLink": "https://drive.google.com/drive/u/0/folders/1hXpdzjBKPjZKnH9BEgujEksY69NROcLn",
+        "tooltipDrive": "Ver drive con certificaciones",
+        "tooltipCourse": "Ver curso",
+        "tooltipUniversity": "Ver carrera",
         "university": {
             "one": {
                 "establishment": "Universidad Nacional de Rio Negro",

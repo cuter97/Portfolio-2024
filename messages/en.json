@@ -188,6 +188,9 @@
     "Education": {
         "h3": "Education",
         "h4": "Certifications",
+        "h5": "All my certifications in my",
+        "driveLink": "https://drive.google.com/drive/u/0/folders/1hXpdzjBKPjZKnH9BEgujEksY69NROcLn",
+        "tooltipDrive": "View drive certifications",
         "tooltipCourse": "View course",
         "tooltipUniversity": "View carrer",
         "university": {

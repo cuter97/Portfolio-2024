@@ -35,7 +35,7 @@ export const NavMenu = () => {
                     {menuItems.map((item) => (
                         <li className="py-4 hover:text-orange-700" key={item.href}>
                             <SheetClose asChild>
-                                <Link href={item.href} >
+                                <Link href={item.href}>
                                     {item.label}
                                 </Link>
                             </SheetClose>

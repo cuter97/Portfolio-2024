@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 import { EducationLink } from "./EducationLink"
+import { ButtonType } from "@/components/ui/Button-type";
+import { ArrowUpRight } from "lucide-react";
 
 interface Props {
     university: string[];
@@ -34,6 +36,17 @@ export const EducationContainer = ({ university, certification }: Props) => {
                     tooltip={t(`tooltipCourse`)}
                 />
             ))}
+
+            <h5 className="text-md lg:text-lg">
+                {t('h5')} {' '}
+                <ButtonType
+                    tooltip={t('tooltipDrive')} 
+                    type="link-card"
+                    name="Google Drive"
+                    link={t('driveLink')} 
+                    Icon={<ArrowUpRight className="h-4 w-4 ml-1" />}
+                />
+            </h5>
         </div>
     )
 }
