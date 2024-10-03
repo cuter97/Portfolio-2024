@@ -8,7 +8,7 @@ import { useLocale, useTranslations } from "next-intl"
 
 import { Popover, PopoverContent, PopoverTrigger } from "./popover"
 import { Command, CommandGroup, CommandItem, CommandList } from "./command"
-import { Button } from "./button"
+import { Button, ButtonProps } from "./button"
 
 import { Sun } from "lucide-react"
 import es from '../../../public/images/es.png'
@@ -21,10 +21,11 @@ const modes = [
 ]
 
 interface ButtonModeProps {
-    type: "language" | "darkmode"
+    type: "language" | "darkmode";
+    variant?: ButtonProps["variant"];
 }
 
-export const ButtonMode = ({ type }: ButtonModeProps) => {
+export const ButtonMode = ({ type, variant = 'outline' }: ButtonModeProps) => {
     const { setTheme } = useTheme()
     const locale = useLocale();
     const router = useRouter();
@@ -53,21 +54,34 @@ export const ButtonMode = ({ type }: ButtonModeProps) => {
 
     return (
         <div className="flex items-center space-x-2">
-            {
-                type === "darkmode" ? (
+            <span className="hidden xl:flex">
+                {type === "darkmode" ? (
                     <Sun className="w-6 h-6" />
                 ) : (
                     <Image src={locale === 'es' ? es : en} alt={locale} width={24} height={24} />
-                )
-            }
+                )}
+            </span>
 
             <Popover open={open} onOpenChange={setOpen}>
                 <PopoverTrigger asChild>
-                    <Button variant="outline" size="lg" className="px-4 w-28 justify-start">
-                        {type === "darkmode" ? t("theme") : t("lang")}
+                    <Button
+                        variant={variant}
+                        size="lg"
+                        className="px-4 xl:w-28 justify-start flex items-center"
+                    >
+                        <span className="xl:hidden">
+                            {type === "darkmode" ? (
+                                <Sun className="w-6 h-6" />
+                            ) : (
+                                <Image src={locale === 'es' ? es : en} alt={locale} width={24} height={24} />
+                            )}
+                        </span>
+                        <span className="hidden xl:flex">
+                            {type === "darkmode" ? t("theme") : t("lang")}
+                        </span>
                     </Button>
                 </PopoverTrigger>
-                <PopoverContent className="p-0" side="right">
+                <PopoverContent className="p-0">
                     <Command>
                         <CommandList>
                             <CommandGroup>

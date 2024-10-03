@@ -12,19 +12,27 @@ interface Props {
 
 export const EducationLink = ({ type, link, establishment, carrer, time, tooltip }: Props) => {
     return (
-        <div className="flex justify-between items-center">
-            <div className="flex flex-col">
-                <div className="flex items-center">
-                    {type === 'certification' ?
-                        <Award className="w-7 h-7 mr-2" />
-                        :
-                        <GraduationCap className="w-7 h-7 mr-2" />
-                    }
-                    <ButtonType type="link-card" variant="linkcolorless" name={establishment} link={link} tooltip={tooltip}/>
+        <div className="flex flex-col md:flex-row justify-between md:items-center">
+            <div>
+                <div className="flex flex-col">
+                    <div className="flex items-center">
+                        {type === 'certification' ? (
+                            <Award className="w-6 h-6 mr-2 md:w-7 md:h-7" />
+                        ) : (
+                            <GraduationCap className="w-6 h-6 mr-2 md:w-7 md:h-7" />
+                        )}
+                        <ButtonType
+                            type="link-card"
+                            variant="linkcolorless"
+                            name={establishment}
+                            link={link}
+                            tooltip={tooltip}
+                        />
+                    </div>
                 </div>
-                <p className="ml-9 text-muted-foreground text-md">{carrer}</p>
+                <p className="ml-6 md:ml-9 mt-2 md:mt-0 text-muted-foreground text-sm md:text-md">{carrer}</p>
             </div>
-            <span className="text-muted-foreground text-md">{time}</span>
+            <span className="text-muted-foreground text-sm md:text-md mt-2 md:mt-0">{time}</span>
         </div>
     )
 }

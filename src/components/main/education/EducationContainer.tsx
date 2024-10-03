@@ -10,7 +10,7 @@ export const EducationContainer = ({ university, certification }: Props) => {
     const t = useTranslations('Education');
     return (
         <div className="mb-16 space-y-8">
-            <h3 className="text-3xl mb-6">{t('h3')}</h3>
+            <h3 id="education" className="md:text-3xl text-2xl mb-6 scroll-mt-20">{t('h3')}</h3>
             {university.map((key) => (
                 <EducationLink
                     key={key}
@@ -22,7 +22,7 @@ export const EducationContainer = ({ university, certification }: Props) => {
                     tooltip={t(`tooltipUniversity`)}
                 />
             ))}
-            <h4 className="text-xl font-medium mb-2">{t('h4')}</h4>
+            <h4 className="md:text-xl text-lg font-medium mb-2">{t('h4')}</h4>
             {certification.map((key) => (
                 <EducationLink
                     key={key}

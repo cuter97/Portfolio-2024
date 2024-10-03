@@ -4,14 +4,13 @@ import { Footer } from "@/components/ui/Footer";
 import { Toaster } from "@/components/ui/sonner";
 
 export default function Home() {
-
     return (
         <>
-            <main className="grid md:grid-cols-6 gap-24 py-16 md:px-0 px-4 mx-auto max-w-7xl">
-                <div className="md:col-span-2 col-span-1 flex flex-col relative">
-                    <HeaderContent className="sticky top-16" />
+            <main className="grid xl:grid-cols-6 gap-16 xl:gap-24 pt-16 mx-auto max-w-7xl px-4 xl:px-6 2xl:px-0">
+                <div id='home' className="relative col-span-1 xl:col-span-2 scroll-mt-32">
+                    <HeaderContent className="sticky top-24 flex flex-col items-center xl:items-start" />
                 </div>
-                <MainContent className="md:col-span-4 flex flex-col" />
+                <MainContent className="flex flex-col xl:col-span-4" />
             </main>
             <Footer />
             <Toaster />

@@ -34,9 +34,9 @@ export const CardExperience = ({ title, company, linkCompany, date, site, summar
     const achievementsList = achievements.split('::').map(item => item.trim());
     return (
         <TimeLine date={date}>
-            <div className="w-auto rounded-md bg-background pl-6 pb-6">
-                <h3 className="text-lg font-medium">{title} {''}
-                    <span className="text-xl mr-1">@</span>
+            <div className="w-auto rounded-md bg-background md:pl-6 pb-6">
+                <h3 className="text-lg font-medium">{title}
+                    <span className="mx-1">@</span>
                     <ButtonType
                         tooltip={`Ver ${company}`}
                         name={company}

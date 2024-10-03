@@ -7,9 +7,9 @@ export const ProjectsContainer = async () => {
     const dataCards = await JsonData('Projects.cards')
     return (
         <>
-            <h3 className="text-3xl mb-6">{t('h3')}</h3>
+            <h3 id="projects" className="md:text-3xl text-2xl mb-6 scroll-mt-20">{t('h3')}</h3>
 
-            <div className="grid grid-cols-4 gap-3 mb-16">
+            <div className="grid grid-cols-2 xl:grid-cols-4 gap-3 mb-16">
                 {dataCards.map((key) => (
                     <CardProject
                         key={key}

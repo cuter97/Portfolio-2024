@@ -9,7 +9,7 @@ export const ExperienceContainer = ({ exp }: Props) => {
     const t = useTranslations('Experience');
     return (
         <>
-            <h3 className="text-3xl mb-6">{t('h3')}</h3>
+            <h3 id="experience" className="md:text-3xl text-2xl mb-6 scroll-mt-20">{t('h3')}</h3>
             <ul className="mb-16">
                 {exp.map((key) => (
                     <CardExperience

@@ -27,7 +27,7 @@ export const CardSheet = ({ i18nKey }: Props) => {
                         <Folder className="mr-2 h-6 w-6" />
                         {t('title')}
                     </SheetTitle>
-                    <SheetDescription>{t('info.description')}</SheetDescription>
+                    <SheetDescription className="text-start">{t('info.description')}</SheetDescription>
                 </SheetHeader>
                 <div className="grid gap-4 py-4 text-md">
                     {(t('info.challengesAndSolution') !== '') && <CardSheetInfo title={card('challenge')} description={t('info.challengesAndSolution')} />}
@@ -60,7 +60,7 @@ export const CardSheet = ({ i18nKey }: Props) => {
                 </div>
                 <div className="space-y-4 mb-6">
                     <p className="text-pretty">{card('technologies')}</p>
-                    <div className='grid grid-cols-6 gap-4'>
+                    <div className='grid grid-cols-2 xl:grid-cols-6 gap-4'>
                         {techList.map((skill) => (
                             <BadgeCardHover key={skill} tecnology={skill} type="skill" />
                         ))}
@@ -68,7 +68,7 @@ export const CardSheet = ({ i18nKey }: Props) => {
                 </div>
                 <SheetFooter>
                     <SheetClose asChild>
-                        <Button type="submit">{card('btnBack')}</Button>
+                        <Button type="button">{card('btnBack')}</Button>
                     </SheetClose>
                 </SheetFooter>
             </SheetContent>

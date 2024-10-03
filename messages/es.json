@@ -1,5 +1,6 @@
 {
     "Header": {
+        "home": "Inicio",
         "h1": "Agustin Castets",
         "h2": "Desarrollador Full Stack",
         "h3": "Sobre mi",
@@ -32,24 +33,24 @@
         },
         "cards": {
             "cardOne": {
-                "title": "Desarrollador Junior Full Stack",
-                "company": "DevtionIT",
-                "linkCompany": "https://devtionit.com",
-                "date": "Jul 2022 Feb 2023",
-                "site": "Buenos Aires, Argentina - Remote",
-                "summary": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. Colaboración con el equipo para implementar nuevas funciones y corregir errores.",
-                "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
-                "achievements": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. :: Colaboración con el equipo para implementar nuevas funciones y corregir errores."
-            },
-            "cardTwo": {
                 "title": "Desarrollador Full Stack",
                 "company": "TrainingPeek",
                 "linkCompany": "https://trainingpeek.com",
-                "date": "Feb 2024 May 2024",
+                "date": "May 2024 Feb 2024",
                 "site": "Rio Negro, Argentina - Remote",
                 "summary": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend.",
                 "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
                 "achievements": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend."
+            },
+            "cardTwo": {
+                "title": "Desarrollador Junior Full Stack",
+                "company": "DevtionIT",
+                "linkCompany": "https://devtionit.com",
+                "date": "Feb 2023 Jul 2022",
+                "site": "Buenos Aires, Argentina - Remote",
+                "summary": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. Colaboración con el equipo para implementar nuevas funciones y corregir errores.",
+                "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
+                "achievements": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. :: Colaboración con el equipo para implementar nuevas funciones y corregir errores."
             }
         }
     },

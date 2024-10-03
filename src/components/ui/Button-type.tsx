@@ -30,7 +30,7 @@ interface ButtonWithoutLink extends ButtonTypeBase {
 
 type ButtonTypeProps = ButtonWithLink | ButtonWithoutLink;
 
-export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link", size }: ButtonTypeProps) => {
+export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link" }: ButtonTypeProps) => {
     const t = useTranslations('Header');
 
     const [copied, setCopied] = useState(false);
@@ -54,7 +54,7 @@ export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link", 
             case "link":
                 return { asChild: true, variant: "icon", size: "icon" };
             case "link-card":
-                return { asChild: true, variant, className: "px-0" };
+                return { asChild: true, variant, className: "px-0 md:text-lg text-md whitespace-normal text-start" };
             case "email":
                 return { asChild: true, onClick: handleCopy, variant: copied ? "success" : "icon", size: "icon" };
             case "cv":
