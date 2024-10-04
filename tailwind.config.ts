@@ -77,6 +77,14 @@ const config: Config = {
 		'group-hover:text-[#2d79c6]',
 		'group-hover:text-[#61dbfb]',
 		'group-hover:text-primary',
+		'group-hover:text-[#1D63ED]',
+		'group-hover:text-[#2F5E8D]',
+		'group-hover:text-[#10AA50]',
+		'group-hover:text-[#E44D26]',
+		'group-hover:text-[#2D54E5]',
+		'group-hover:text-[#F8DC3D]',
+		'group-hover:text-[#90C53F]',
+		'group-hover:text-[#E2089B]',
 	]
 };
 export default config;

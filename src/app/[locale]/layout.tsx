@@ -8,8 +8,11 @@ import { ThemeProvider } from "@/components/providers/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
-    title: "Agustin Castets - Portfolio",
-    description: "Agustin Castets, Desarrollador Full Stack con experiencia en la creación de aplicaciones web eficientes y escalables. Especializado en tecnologías modernas tanto en el frontend como en el backend.",
+    title: "Agustin Castets | Portfolio",
+    description: "Agustin Castets, Full Stack Developer with experience in creating efficient and scalable web applications. Specialized in modern technologies in both the frontend and backend.",
+    icons: {
+        icon: "/icon.svg",
+    },
 };
 
 import { Roboto_Mono } from 'next/font/google'

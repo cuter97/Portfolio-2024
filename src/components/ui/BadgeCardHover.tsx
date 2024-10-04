@@ -19,7 +19,7 @@ export const BadgeCardHover = ({ tecnology, type }: Props) => {
     const formattedTechnology = tecnology.trim().toLowerCase();
     const techConfig = technologies[formattedTechnology];
 
-    if (!techConfig)      
+    if (!techConfig)
         return null;
 
     return (
@@ -34,8 +34,7 @@ export const BadgeCardHover = ({ tecnology, type }: Props) => {
             <HoverCardContent className="w-80">
                 <div className="flex justify-between space-x-4">
                     <Avatar className="w-12 h-12">
-                        <AvatarImage src={t(`${formattedTechnology}.image`)} />
-                        <AvatarFallback>VC</AvatarFallback>
+                        <techConfig.icon className='w-12 h-12' />
                     </Avatar>
                     <div className="space-y-1">
                         <h4 className="text-sm font-semibold">{t(`${formattedTechnology}.@name`)}</h4>

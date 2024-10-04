@@ -36,7 +36,7 @@
                 "title": "Desarrollador Full Stack",
                 "company": "TrainingPeek",
                 "linkCompany": "https://trainingpeek.com",
-                "date": "May 2024 Feb 2024",
+                "date": "Feb 2024 May 2024",
                 "site": "Rio Negro, Argentina - Remote",
                 "summary": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend.",
                 "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
@@ -46,7 +46,7 @@
                 "title": "Desarrollador Junior Full Stack",
                 "company": "DevtionIT",
                 "linkCompany": "https://devtionit.com",
-                "date": "Feb 2023 Jul 2022",
+                "date": "Jul 2022 Feb 2023",
                 "site": "Buenos Aires, Argentina - Remote",
                 "summary": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. Colaboración con el equipo para implementar nuevas funciones y corregir errores.",
                 "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
@@ -151,37 +151,86 @@
             "nestjs": {
                 "name": "Nest.js",
                 "@name": "@nestjs",
-                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
                 "description": "A progressive Node.js framework for building scalable server-side apps.",
                 "joined": "Joined December 2017"
             },
             "nodejs": {
                 "name": "Node.js",
                 "@name": "@nodejs",
-                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
                 "description": "A JavaScript runtime built on Chrome's V8 engine, enabling server-side execution of JavaScript.",
                 "joined": "Joined May 2009"
             },
             "typescript": {
                 "name": "Typescript",
                 "@name": "@typescript",
-                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
                 "description": "A superset of JavaScript that adds static typing, enhancing developer productivity and code quality.",
                 "joined": "Joined October 2012"
             },
             "reactjs": {
                 "name": "React.js",
                 "@name": "@reactjs",
-                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
                 "description": "A JavaScript library for building user interfaces, developed and maintained by Meta (Facebook).",
                 "joined": "Joined May 2013"
             },
             "nextjs": {
                 "name": "Next.js",
                 "@name": "@nextjs",
-                "image": "https://avatars.githubusercontent.com/u/28507035?v=4",
                 "description": "A React-based framework for building server-side rendered applications.",
                 "joined": "Joined May 2018"
+            },
+            "docker": {
+                "name": "Docker",
+                "@name": "@docker",
+                "description": "A platform for developing, shipping, and running applications inside containers.",
+                "joined": "Joined March 2013"
+            },
+            "postgresql": {
+                "name": "PostgreSQL",
+                "@name": "@postgresql",
+                "description": "An open-source, object-relational database system known for its robustness and standards compliance.",
+                "joined": "Joined July 1996"
+            },
+            "mongodb": {
+                "name": "MongoDB",
+                "@name": "@mongodb",
+                "description": "A NoSQL database that uses a document-oriented data model.",
+                "joined": "Joined February 2009"
+            },
+            "html": {
+                "name": "HTML",
+                "@name": "@html",
+                "description": "The standard markup language for documents designed to be displayed in a web browser.",
+                "joined": "Joined October 1991"
+            },
+            "css": {
+                "name": "CSS",
+                "@name": "@css",
+                "description": "A stylesheet language used to describe the presentation of a document written in HTML or XML.",
+                "joined": "Joined December 1996"
+            },
+            "javascript": {
+                "name": "JavaScript",
+                "@name": "@javascript",
+                "description": "A versatile programming language that is widely used for web development, both on the client and server side.",
+                "joined": "Joined December 1995"
+            },
+            "expressjs": {
+                "name": "Express.js",
+                "@name": "@expressjs",
+                "description": "A minimal and flexible Node.js web application framework, providing a robust set of features to develop web and mobile applications.",
+                "joined": "Joined November 2010"
+            },
+            "graphql": {
+                "name": "GraphQL",
+                "@name": "@graphql",
+                "description": "A query language for APIs and a runtime for executing those queries by using a type system defined for your data.",
+                "joined": "Joined February 2015"
+            },
+            "git": {
+                "name": "Git",
+                "@name": "@git",
+                "description": "A distributed version control system that tracks changes in source code during software development.",
+                "joined": "Joined April 2005"
             }
         }
     },
