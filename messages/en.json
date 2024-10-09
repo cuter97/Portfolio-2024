@@ -2,14 +2,14 @@
     "Header": {
         "home": "Home",
         "h1": "Agustin Castets",
-        "h2": "Full Stack developer",
-        "h3": "About",
-        "describe": "Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting.",
+        "h2": "Full Stack Developer",
+        "h3": "About Me",
+        "describe": "Full Stack Developer with a passion for building web applications. Currently seeking opportunities to further develop my skills in a professional setting. In my free time, I enjoy woodworking, which allows me to explore my creativity and attention to detail.",
         "btnHeader": {
             "btnEmail": "Copy email",
             "btnCv": "Resume",
             "toast": {
-                "title": "Email has been copied!"
+                "title": "Email copied!"
             }
         },
         "btnType": {
@@ -36,26 +36,26 @@
                 "title": "Full Stack Developer",
                 "company": "TrainingPeek",
                 "linkCompany": "https://trainingpeek.com",
+                "date": "Feb 2024  May 2024",
                 "site": "Rio Negro, Argentina - Remote",
-                "date": "Feb 2024 May 2024",
                 "summary": "Developed and maintained the trainingpeek.com application using Next.js for the frontend and Node.js for the backend.",
-                "responsibilities": "Developed and designed a web application using Next.js for personalized training. :: Implemented the backend to manage users and payments using the MercadoPago API. :: Designed and developed the user interface, ensuring a smooth and responsive experience.",
-                "achievements": "Developed and maintained the trainingpeek.com application using Next.js for the frontend and Node.js for the backend."
+                "responsibilities": "Developed and designed a web application using Next.js for personalized training. :: Implemented the backend to manage users and payments using the Mercado Pago API. :: Designed and developed the user interface, ensuring a smooth and responsive experience.",
+                "achievements": "Improved application performance, achieving a 30% reduction in page load times. :: Successfully integrated the Mercado Pago API."
             },
             "cardTwo": {
                 "title": "Junior Full Stack Developer",
                 "company": "DevtionIT",
                 "linkCompany": "https://devtionit.com",
-                "date": "Jul 2022 Feb 2023",
+                "date": "Jul 2022  Feb 2023",
                 "site": "Buenos Aires, Argentina - Remote",
-                "summary": "Developed and maintained web applications using JavaScript, HTML, and CSS. Collaborated with the team to implement new features and fix bugs.",
+                "summary": "Developed and maintained web applications using React.js. Collaborated with the team to implement new features and fix bugs. Strengthened my React skills by working on large team projects.",
                 "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
-                "achievements": "Developed and maintained web applications using JavaScript, HTML, and CSS. :: Collaborated with the team to implement new features and fix bugs."
+                "achievements": "Contributed to several major projects, enhancing the functionality and usability of applications. :: Implemented efficient solutions that optimized application performance, resulting in faster load times. :: Received recognition from the team for my problem-solving ability and commitment to code quality."
             }
         }
     },
     "Projects": {
-        "h3": "Proyectos",
+        "h3": "Projects",
         "cardProject": {
             "btnInfo": "Info",
             "tooltiplink": "View Website",
@@ -63,90 +63,83 @@
             "challenge": "Challenge and Solutions",
             "features": "Features",
             "futureImprovements": "Future Improvements",
-            "technologies": "Tecnologias usadas:",
-            "btnBack": "Volver"
+            "technologies": "Technologies Used:",
+            "btnBack": "Back"
         },
         "cards": {
             "one": {
                 "title": "Portfolio",
                 "links": {
-                    "git": "https://cuter97.github.io/portfolio-2024",
+                    "git": "https://github.com/cuter97/Portfolio-2024",
                     "web": ""
                 },
                 "summary": "A portfolio website to showcase my projects and skills.",
-                "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
-                "badgets": "nextjs :: nodejs",
+                "content": "Built with Next.js and Shadcn/ui. :: Supports English and Spanish.",
+                "badgets": "nextjs :: shadcnui",
                 "info": {
-                    "description": "Este proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en el desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
-                    "challengesAndSolution": "Optimización de Performance: Implementé técnicas de optimización como el lazy loading de imágenes y la generación estática de páginas (SSG) para mejorar la velocidad de carga. :: Diseño Responsivo: Adapté el diseño para que se vea y funcione correctamente en dispositivos móviles y de escritorio utilizando CSS Grid y Flexbox. :: Gestión de Contacto: Integré un sistema de mensajería en tiempo real que utiliza websockets para enviar y recibir mensajes instantáneamente.",
-                    "features": "",
-                    "futureImprovements": "Optimización de Performance :: PWA: Convertir el portafolio en una Progressive Web App para ofrecer una experiencia similar a una aplicación nativa. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
-                    "linkGithub": "https://cuter97.github.io/portfolio-2024",
-                    "linkWeb": "https://cuter97.github.io/portfolio-2024",
-                    "technologies": "nextjs :: nodejs :: typescript :: reactjs :: nestjs :: typescript"
+                    "description": "This project is a custom platform to showcase my work, skills, and experience in web development. Designed with a modern and minimalist approach, the portfolio offers an intuitive and visually appealing user experience.",
+                    "challengesAndSolution": "Dark Mode: Implemented a dynamic system for switching between light and dark modes, enhancing accessibility and user experience personalization. :: Multilanguage Support: Added support for English and Spanish, allowing users to easily switch between languages. :: Responsive Design: The portfolio is fully optimized for mobile devices, ensuring smooth and responsive viewing across all screen sizes.",
+                    "features": "Built with Next.js and Shadcn/ui :: Animations created using Framer Motion :: Language switching implemented with i18n",
+                    "futureImprovements": "Admin Profile: I would like to implement an admin profile to dynamically add and manage content. :: Blog: Create a blog section to share insights and updates on my projects and web development. :: Dynamic Projects Section: Automate the loading of projects from a GitHub repository.",
+                    "technologies": "nextjs :: typescript :: shadcnui :: framermotion :: i18n"
                 }
             },
             "two": {
                 "title": "Microservices",
                 "links": {
-                    "git": "https://cuter97.github.io/portfolio-2024",
+                    "git": "https://github.com/orgs/Nest-Microservices-dev/repositories",
                     "web": ""
                 },
-                "summary": "A portfolio website to showcase my projects and skills.",
-                "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
-                "badgets": "nextjs :: nodejs",
+                "summary": "Microservices practice with Nest.js, Docker, and NATS as the messaging system.",
+                "content": "Built with Nest.js and PostgreSQL. :: Using NATS as a communication system.",
+                "badgets": "nestjs :: docker",
                 "info": {
-                    "description": "aaaaEste proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en el desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
-                    "challengesAndSolution": "Optimización de Performance: Implementé técnicas de optimización como el lazy loading de imágenes y la generación estática de páginas (SSG) para mejorar la velocidad de carga. :: Diseño Responsivo: Adapté el diseño para que se vea y funcione correctamente en dispositivos móviles y de escritorio utilizando CSS Grid y Flexbox. :: Gestión de Contacto: Integré un sistema de mensajería en tiempo real que utiliza websockets para enviar y recibir mensajes instantáneamente.",
-                    "features": "Optimización de Performance :: Diseño Responsivo :: Gestión de Contacto",
-                    "futureImprovements": "Optimización de Performance :: PWA: Convertir el portafolio en una Progressive Web App para ofrecer una experiencia similar a una aplicación nativa. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
-                    "linkGithub": "https://cuter97.github.io/portfolio-2024",
-                    "linkWeb": "https://cuter97.github.io/portfolio-2024",
-                    "technologies": "nextjs :: nodejs :: typescript"
+                    "description": "This project is part of the microservices course at DevTalles Academy. It uses Nest.js to create scalable services, Docker for containerization, and NATS for asynchronous communication between microservices. The services include product management, orders, payments, and authentication.",
+                    "challengesAndSolution": "",
+                    "features": "Microservices communicated via NATS :: Containerization with Docker :: Product, order, and payment management.",
+                    "futureImprovements": "Create an admin profile to dynamically add information :: Improve event management and communication between microservices using advanced messaging design patterns.",
+                    "technologies": "nestjs :: docker :: typescript :: postgresql :: nats"
                 }
             },
             "tree": {
-                "title": "TraininPeek Website",
+                "title": "TrainingPeek Website",
                 "links": {
                     "git": "",
-                    "web": "https://cuter97.github.io/portfolio-2024"
+                    "web": "https://trainingpeek.com"
                 },
-                "summary": "A portfolio website to showcase my projects and skills.",
-                "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
+                "summary": "Online training platform offering various training activities.",
+                "content": "Built with Next.js and Node.js. :: Integrated Mercado Pago for payment.",
                 "badgets": "nextjs :: nodejs",
                 "info": {
-                    "description": "Este proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en el desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
-                    "challengesAndSolution": "Optimización de Performance: Implementé técnicas de optimización como el lazy loading de imágenes y la generación estática de páginas (SSG) para mejorar la velocidad de carga. :: Diseño Responsivo: Adapté el diseño para que se vea y funcione correctamente en dispositivos móviles y de escritorio utilizando CSS Grid y Flexbox. :: Gestión de Contacto: Integré un sistema de mensajería en tiempo real que utiliza websockets para enviar y recibir mensajes instantáneamente.",
-                    "features": "Optimización de Performance :: Diseño Responsivo :: Gestión de Contacto",
-                    "futureImprovements": "Optimización de Performance :: PWA: Convertir el portafolio en una Progressive Web App para ofrecer una experiencia similar a una aplicación nativa. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
-                    "linkGithub": "https://cuter97.github.io/portfolio-2024",
-                    "linkWeb": "https://cuter97.github.io/portfolio-2024",
-                    "technologies": "nextjs :: nodejs :: typescript"
+                    "description": "TrainingPeek is an online training platform developed to offer an intuitive and accessible user experience. It includes user and admin registration features, allowing efficient management of accounts and platform content.",
+                    "challengesAndSolution": "Performance Optimization: Implemented optimization techniques like lazy loading of images and static site generation (SSG) to improve load speed. :: Responsive Design: Adapted the design to look and function correctly on mobile and desktop devices using CSS Grid and Flexbox. :: Payment Gateway Integration: Incorporated the Mercado Pago payment gateway to facilitate user transactions.",
+                    "features": "User and admin registration :: Integration with Mercado Pago for payments :: Accessible and user-friendly training platform :: Responsive design for mobile and desktop devices. :: UI components developed with NextUI.",
+                    "futureImprovements": "",
+                    "technologies": "nextjs :: nodejs :: typescript :: mercadopago :: nextui"
                 }
             },
             "four": {
-                "title": "No se que mas",
+                "title": "Shortly API",
                 "links": {
-                    "git": "",
-                    "web": "https://cuter97.github.io/portfolio-2024"
+                    "git": "https://github.com/cuter97/shortly-api",
+                    "web": "https://shortly-api-eta.vercel.app"
                 },
-                "summary": "A portfolio website to showcase my projects and skills.",
-                "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
-                "badgets": "nextjs :: nodejs",
+                "summary": "A web user interface for creating shortened URLs using the rel.ink API.",
+                "content": "Built with React and SASS. :: One of my first projects from 2022.",
+                "badgets": "reactjs :: sass",
                 "info": {
-                    "description": "Este proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en el desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
-                    "challengesAndSolution": "Optimización de Performance: Implementé técnicas de optimización como el lazy loading de imágenes y la generación estática de páginas (SSG) para mejorar la velocidad de carga. :: Diseño Responsivo: Adapté el diseño para que se vea y funcione correctamente en dispositivos móviles y de escritorio utilizando CSS Grid y Flexbox. :: Gestión de Contacto: Integré un sistema de mensajería en tiempo real que utiliza websockets para enviar y recibir mensajes instantáneamente.",
-                    "features": "Optimización de Performance :: Diseño Responsivo :: Gestión de Contacto",
-                    "futureImprovements": "Optimización de Performance :: PWA: Convertir el portafolio en una Progressive Web App para ofrecer una experiencia similar a una aplicación nativa. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
-                    "linkGithub": "https://cuter97.github.io/portfolio-2024",
-                    "linkWeb": "https://cuter97.github.io/portfolio-2024",
-                    "technologies": "nextjs :: nodejs :: typescript"
+                    "description": "This project was a frontend mentor challenge. The challenge involves integrating the rel.ink API into a web user interface to create shortened URLs, which should be displayed according to the proposed design. I took this opportunity to gain more experience with asynchronous JavaScript. It is one of my first projects and was completed in 2022.",
+                    "challengesAndSolution": "Learned to work with APIs and handle asynchronous operations effectively. :: Designed the user interface to meet the specifications of the challenge.",
+                    "features": "Integration with the rel.ink API for URL shortening :: User-friendly interface for creating and managing shortened URLs.",
+                    "futureImprovements": "Enhance the user experience with additional features like link analytics and custom shortened URLs.",
+                    "technologies": "reactjs :: sass :: css"
                 }
             }
         }
     },
     "Technologies": {
         "h3": "Skills",
+        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git",
         "skills": {
             "nestjs": {
                 "name": "Nest.js",
@@ -231,6 +224,48 @@
                 "@name": "@git",
                 "description": "A distributed version control system that tracks changes in source code during software development.",
                 "joined": "Joined April 2005"
+            },
+            "shadcnui": {
+                "name": "shadcn/ui",
+                "@name": "@shadcn-ui",
+                "description": "A collection of UI components built with Radix and customized with Tailwind CSS.",
+                "joined": "Joined in January 2023"
+            },
+            "i18n": {
+                "name": "i18n",
+                "@name": "@i18n",
+                "description": "An internationalization system that allows managing multiple languages in web applications.",
+                "joined": "Joined in March 2006"
+            },
+            "framermotion": {
+                "name": "Framer Motion",
+                "@name": "@framer-motion",
+                "description": "A library for React that enables creating smooth and high-performance animations in web applications.",
+                "joined": "Joined in April 2018"
+            },
+            "nats": {
+                "name": "NATS",
+                "@name": "@nats",
+                "description": "A high-performance messaging system designed for cloud-native applications, enabling communication between distributed services.",
+                "joined": "Joined in June 2016"
+            },
+            "mercadopago": {
+                "name": "Mercado Pago",
+                "@name": "@mercado_pago",
+                "description": "An online payment platform that enables secure and efficient transactions for both merchants and consumers.",
+                "joined": "Joined in August 2004"
+            },
+            "nextui": {
+                "name": "NextUI",
+                "@name": "@nextui",
+                "description": "A modern React UI library that provides a set of customizable and responsive components for building user interfaces.",
+                "joined": "Joined in July 2021"
+            },
+            "sass": {
+                "name": "SASS",
+                "@name": "@sass",
+                "description": "A preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS), adding features like variables, nested rules, and mixins.",
+                "joined": "Joined in 2006"
             }
         }
     },
@@ -245,40 +280,58 @@
         "university": {
             "one": {
                 "establishment": "Universidad Nacional de Rio Negro",
-                "carrer": "Ingenieria de Software",
-                "time": "2017 - 2023",
-                "link": "https://github.com/cuter97"
+                "carrer": "Computer Ingenering",
+                "time": "2023 - Present",
+                "link": "https://www.unrn.edu.ar/carreras/Ingenieria-en-Computacion-78"
             },
             "two": {
                 "establishment": "Universidad Nacional de Rio Negro",
-                "carrer": "Ingenieria de Software",
-                "time": "2017 - 2023",
-                "link": "https://github.com/cuter97"
+                "carrer": "Electronic Engineering",
+                "time": "2017 - 2020",
+                "link": "https://www.unrn.edu.ar/carreras/Ingenieria-Electronica-5"
             }
         },
         "certification": {
             "one": {
-                "establishment": "Platzi",
-                "carrer": "Frontend Developer",
-                "time": "2022",
-                "link": "https://github.com/cuter97"
+                "establishment": "DevTalles",
+                "carrer": "NestJS + Microservicios: Aplicaciones escalables y modulares.",
+                "time": "2024",
+                "link": "https://cursos.devtalles.com/courses/nestjs-microservicios"
             },
             "two": {
-                "establishment": "Platzi",
-                "carrer": "Frontend Developer",
-                "time": "2022",
-                "link": "https://github.com/cuter97"
+                "establishment": "DevTalles",
+                "carrer": "Next.js: El framework de React para producción.",
+                "time": "2024",
+                "link": "https://cursos.devtalles.com/courses/nextjs"
             },
             "three": {
-                "establishment": "Platzi",
-                "carrer": "Frontend Developer",
+                "establishment": "Udemy",
+                "carrer": "Nest + GraphQL: Evoluciona tus APIs.",
+                "time": "2023",
+                "link": "https://www.udemy.com/course/nest-graphql/"
+            },
+            "four": {
+                "establishment": "Udemy",
+                "carrer": "Nest: Desarrollo de backend escalable con Node.",
+                "time": "2023",
+                "link": "https://www.udemy.com/course/nest-framework/"
+            },
+            "five": {
+                "establishment": "Udemy",
+                "carrer": "Complete NodeJS Developer in 2023 (GraphQL, MongoDB, + more).",
+                "time": "2023",
+                "link": "https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery"
+            },
+            "six": {
+                "establishment": "CoderHouse",
+                "carrer": "React.js",
                 "time": "2022",
-                "link": "https://github.com/cuter97"
+                "link": "https://www.coderhouse.com/ar/online/reactjs"
             }
         }
     },
     "Footer": {
-        "h3": "¿Talk later?",
+        "h3": "Let's Talk?",
         "mail": "aguscastets@gmail.com",
         "copyright": "Portfolio made by Agustin Castets. Building software with ♥ from Bariloche to the world."
     }

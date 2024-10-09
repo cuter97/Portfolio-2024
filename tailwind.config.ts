@@ -85,6 +85,9 @@ const config: Config = {
 		'group-hover:text-[#F8DC3D]',
 		'group-hover:text-[#90C53F]',
 		'group-hover:text-[#E2089B]',
+		'group-hover:text-[#009788]',
+		'group-hover:text-[#00BCFF]',
+		'group-hover:text-[#CD6799]',
 	]
 };
 export default config;

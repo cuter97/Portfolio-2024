@@ -3,20 +3,20 @@
         "home": "Inicio",
         "h1": "Agustin Castets",
         "h2": "Desarrollador Full Stack",
-        "h3": "Sobre mi",
-        "describe": "Desarrollador full stack apasionado por la creación de aplicaciones web. Actualmente en busca de oportunidades para seguir desarrollando mis habilidades en un entorno profesional.",
+        "h3": "Sobre mí",
+        "describe": "Desarrollador full stack apasionado por la creación de aplicaciones web. Actualmente en busca de oportunidades para seguir desarrollando mis habilidades en un entorno profesional. En mi tiempo libre, disfruto de la carpintería, lo que me permite explorar mi creatividad y atención al detalle.",
         "btnHeader": {
             "btnEmail": "Copiar email",
-            "btnCv": "Curriculum",
+            "btnCv": "Currículum",
             "toast": {
-                "title": "Email copiado!"
+                "title": "¡Email copiado!"
             }
         },
         "btnType": {
             "theme": "Tema",
             "lang": "Idioma",
             "labels": {
-                "en": "Ingles",
+                "en": "Inglés",
                 "es": "Español"
             }
         },
@@ -29,28 +29,28 @@
             "responsibilities": "Responsabilidades",
             "achievements": "Logros",
             "btnLess": "Ver Menos",
-            "btnMore": "Ver Mas"
+            "btnMore": "Ver Más"
         },
         "cards": {
             "cardOne": {
                 "title": "Desarrollador Full Stack",
                 "company": "TrainingPeek",
                 "linkCompany": "https://trainingpeek.com",
-                "date": "Feb 2024 May 2024",
-                "site": "Rio Negro, Argentina - Remote",
-                "summary": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend.",
-                "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
-                "achievements": "Desarrollo y mantenimiento de la aplicación de trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend."
+                "date": "Feb 2024  May 2024",
+                "site": "Rio Negro, Argentina - Remoto",
+                "summary": "Desarrollo y mantenimiento de la aplicación trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend.",
+                "responsibilities": "Desarrollé y diseñé una aplicación web utilizando Next.js para entrenamiento personalizado. :: Implementé el backend para gestionar usuarios y pagos utilizando la API de Mercado Pago. :: Diseñé y desarrollé la interfaz de usuario, asegurando una experiencia fluida y receptiva.",
+                "achievements": "Mejoré el rendimiento de la aplicación, logrando una reducción del 30% en los tiempos de carga de las páginas. :: Integré con éxito la API de Mercado Pago."
             },
             "cardTwo": {
                 "title": "Desarrollador Junior Full Stack",
                 "company": "DevtionIT",
                 "linkCompany": "https://devtionit.com",
-                "date": "Jul 2022 Feb 2023",
-                "site": "Buenos Aires, Argentina - Remote",
-                "summary": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. Colaboración con el equipo para implementar nuevas funciones y corregir errores.",
-                "responsibilities": "Developed and maintained interactive user interfaces using React.js. :: Collaborated with designers to translate user designs into functional and styled code. :: Implemented agile development practices to improve team efficiency and the quality of the final product.",
-                "achievements": "Desarrollo y mantenimiento de aplicaciones web utilizando JavaScript, HTML y CSS. :: Colaboración con el equipo para implementar nuevas funciones y corregir errores."
+                "date": "Jul 2022  Feb 2023",
+                "site": "Buenos Aires, Argentina - Remoto",
+                "summary": "Desarrollo y mantenimiento de aplicaciones web utilizando React.js. Colaboré con el equipo para implementar nuevas funciones y corregir errores. Fortalecí mis habilidades en React al trabajar en grandes proyectos en equipo.",
+                "responsibilities": "Desarrollé y mantuve interfaces de usuario interactivas utilizando React.js. :: Colaboré con diseñadores para traducir diseños de usuario en código funcional y estilizado. :: Implementé prácticas de desarrollo ágil para mejorar la eficiencia del equipo y la calidad del producto final.",
+                "achievements": "Contribuí a varios proyectos importantes, mejorando la funcionalidad y la usabilidad de las aplicaciones. :: Implementé soluciones eficientes que optimizaron el rendimiento de la aplicación, resultando en tiempos de carga más rápidos. :: Recibí reconocimiento del equipo por mi capacidad para resolver problemas y mi compromiso con la calidad del código."
             }
         }
     },
@@ -58,179 +58,214 @@
         "h3": "Proyectos",
         "cardProject": {
             "btnInfo": "Info",
-            "tooltiplink": "View Website",
-            "tooltipgit": "View Code",
-            "challenge": "Challenge and Solutions",
-            "features": "Features",
-            "futureImprovements": "Future Improvements",
-            "technologies": "Tecnologias usadas:",
+            "tooltiplink": "Ver sitio web",
+            "tooltipgit": "Ver código",
+            "challenge": "Desafío y Soluciones",
+            "features": "Características",
+            "futureImprovements": "Mejoras futuras",
+            "technologies": "Tecnologías usadas:",
             "btnBack": "Volver"
         },
         "cards": {
             "one": {
                 "title": "Portfolio",
                 "links": {
-                    "git": "https://cuter97.github.io/portfolio-2024",
+                    "git": "https://github.com/cuter97/Portfolio-2024",
                     "web": ""
                 },
-                "summary": "A portfolio website to showcase my projects and skills.",
-                "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
-                "badgets": "nextjs :: nodejs",
+                "summary": "Un sitio web de portafolio para mostrar mis proyectos y habilidades.",
+                "content": "Construido con Next.js y Shadcn/ui. :: Soporta inglés y español.",
+                "badgets": "nextjs :: shadcnui",
                 "info": {
-                    "description": "Este proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en el desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
-                    "challengesAndSolution": "Optimización de Performance: Implementé técnicas de optimización como el lazy loading de imágenes y la generación estática de páginas (SSG) para mejorar la velocidad de carga. :: Diseño Responsivo: Adapté el diseño para que se vea y funcione correctamente en dispositivos móviles y de escritorio utilizando CSS Grid y Flexbox. :: Gestión de Contacto: Integré un sistema de mensajería en tiempo real que utiliza websockets para enviar y recibir mensajes instantáneamente.",
-                    "features": "",
-                    "futureImprovements": "Optimización de Performance :: PWA: Convertir el portafolio en una Progressive Web App para ofrecer una experiencia similar a una aplicación nativa. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
-                    "linkGithub": "https://cuter97.github.io/portfolio-2024",
-                    "linkWeb": "https://cuter97.github.io/portfolio-2024",
-                    "technologies": "nextjs :: nodejs :: typescript"
+                    "description": "Este proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
+                    "challengesAndSolution": "Modo Oscuro: Implementé un sistema dinámico para alternar entre modos claro y oscuro, mejorando la accesibilidad y la personalización de la experiencia del usuario. :: Soporte Multilingüe: Agregué soporte para inglés y español, permitiendo a los usuarios alternar fácilmente entre idiomas. :: Diseño Responsivo: El portafolio está completamente optimizado para dispositivos móviles, asegurando una visualización fluida y receptiva en todos los tamaños de pantalla.",
+                    "features": "Construido con Next.js y Shadcn/ui :: Animaciones creadas con Framer Motion :: Cambio de idioma implementado con i18n",
+                    "futureImprovements": "Perfil de Administrador: Me gustaría implementar un perfil de administrador para agregar y gestionar contenido de forma dinámica. :: Blog: Crear una sección de blog para compartir ideas y actualizaciones sobre mis proyectos y desarrollo web. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
+                    "technologies": "nextjs :: typescript :: shadcnui :: framermotion :: i18n"
                 }
             },
             "two": {
-                "title": "Microservices",
+                "title": "Microservicios",
                 "links": {
-                    "git": "https://cuter97.github.io/portfolio-2024",
+                    "git": "https://github.com/orgs/Nest-Microservices-dev/repositories",
                     "web": ""
                 },
-                "summary": "A portfolio website to showcase my projects and skills.",
-                "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
-                "badgets": "nextjs :: nodejs",
+                "summary": "Práctica de microservicios con Nest.js, Docker y NATS como sistema de mensajería.",
+                "content": "Construido con Nest.js y PostgreSQL. :: NATS como sistema de comunicación.",
+                "badgets": "nestjs :: docker",
                 "info": {
-                    "description": "Este proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en el desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
-                    "challengesAndSolution": "Optimización de Performance: Implementé técnicas de optimización como el lazy loading de imágenes y la generación estática de páginas (SSG) para mejorar la velocidad de carga. :: Diseño Responsivo: Adapté el diseño para que se vea y funcione correctamente en dispositivos móviles y de escritorio utilizando CSS Grid y Flexbox. :: Gestión de Contacto: Integré un sistema de mensajería en tiempo real que utiliza websockets para enviar y recibir mensajes instantáneamente.",
-                    "features": "Optimización de Performance :: Diseño Responsivo :: Gestión de Contacto",
-                    "futureImprovements": "Optimización de Performance :: PWA: Convertir el portafolio en una Progressive Web App para ofrecer una experiencia similar a una aplicación nativa. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
-                    "linkGithub": "https://cuter97.github.io/portfolio-2024",
-                    "linkWeb": "https://cuter97.github.io/portfolio-2024",
-                    "technologies": "nextjs :: nodejs :: typescript"
+                    "description": "Este proyecto es parte del curso de microservicios de la academia DevTalles. Utiliza Nest.js para la creación de servicios escalables, Docker para la contenerización y NATS para la comunicación asíncrona entre microservicios. Los servicios incluyen gestión de productos, pedidos, pagos y autenticación.",
+                    "challengesAndSolution": "",
+                    "features": "Microservicios comunicados mediante NATS :: Contenerización con Docker :: Gestión de productos, pedidos y pagos.",
+                    "futureImprovements": "Crear un perfil de administrador para agregar información dinámicamente :: Mejorar la gestión de eventos y la comunicación entre microservicios utilizando patrones de diseño de mensajería avanzada.",
+                    "technologies": "nestjs :: docker :: typescript :: postgresql :: nats"
                 }
             },
             "tree": {
                 "title": "TraininPeek Website",
                 "links": {
                     "git": "",
-                    "web": "https://cuter97.github.io/portfolio-2024"
+                    "web": "https://trainingpeek.com"
                 },
-                "summary": "A portfolio website to showcase my projects and skills.",
-                "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
+                "summary": "Plataforma de entrenamiento en línea que ofrece diversas actividades de formación.",
+                "content": "Construido con Next.js y Node.js. :: Integración de Mercado Pago para pagos.",
                 "badgets": "nextjs :: nodejs",
                 "info": {
-                    "description": "Este proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en el desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
-                    "challengesAndSolution": "Optimización de Performance: Implementé técnicas de optimización como el lazy loading de imágenes y la generación estática de páginas (SSG) para mejorar la velocidad de carga. :: Diseño Responsivo: Adapté el diseño para que se vea y funcione correctamente en dispositivos móviles y de escritorio utilizando CSS Grid y Flexbox. :: Gestión de Contacto: Integré un sistema de mensajería en tiempo real que utiliza websockets para enviar y recibir mensajes instantáneamente.",
-                    "features": "Optimización de Performance :: Diseño Responsivo :: Gestión de Contacto",
-                    "futureImprovements": "Optimización de Performance :: PWA: Convertir el portafolio en una Progressive Web App para ofrecer una experiencia similar a una aplicación nativa. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
-                    "linkGithub": "https://cuter97.github.io/portfolio-2024",
-                    "linkWeb": "https://cuter97.github.io/portfolio-2024",
-                    "technologies": "nextjs :: nodejs :: typescript"
+                    "description": "TrainingPeek es una plataforma de entrenamiento en línea desarrollada para ofrecer una experiencia de usuario intuitiva y accesible. Incluye funcionalidades de registro para usuarios y administradores, permitiendo una gestión eficaz de las cuentas y el contenido de la plataforma.",
+                    "challengesAndSolution": "Optimización de Performance: Implementé técnicas de optimización como el lazy loading de imágenes y la generación estática de páginas (SSG) para mejorar la velocidad de carga. :: Diseño Responsivo: Adapté el diseño para que se vea y funcione correctamente en dispositivos móviles y de escritorio utilizando CSS Grid y Flexbox. :: Integración de Pasarela de Pago: Incorporé la pasarela de pago de Mercado Pago para facilitar las transacciones de los usuarios.",
+                    "features": "Registro de usuarios y administradores :: Integración con Mercado Pago para pagos :: Plataforma de entrenamiento accesible y fácil de usar :: Diseño responsivo para dispositivos móviles y escritorio. :: Componentes de interfaz desarrollados con NextUI.",
+                    "futureImprovements": "",
+                    "technologies": "nextjs :: nodejs :: typescript :: mercadopago :: nextui"
                 }
             },
             "four": {
-                "title": "No se que mas",
+                "title": "Shortly API",
                 "links": {
-                    "git": "",
-                    "web": "https://cuter97.github.io/portfolio-2024"
+                    "git": "https://github.com/cuter97/shortly-api",
+                    "web": "https://shortly-api-eta.vercel.app"
                 },
-                "summary": "A portfolio website to showcase my projects and skills.",
-                "content": "Built with Node.js and MongoDB. :: User authentication and CRUD operations",
-                "badgets": "nextjs :: nodejs",
+                "summary": "Una interfaz web para crear URLs acortadas utilizando la API de rel.ink.",
+                "content": "Construido con React y SASS. :: Uno de mis primeros proyectos de 2022.",
+                "badgets": "reactjs :: sass",
                 "info": {
-                    "description": "Este proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en el desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
-                    "challengesAndSolution": "Optimización de Performance: Implementé técnicas de optimización como el lazy loading de imágenes y la generación estática de páginas (SSG) para mejorar la velocidad de carga. :: Diseño Responsivo: Adapté el diseño para que se vea y funcione correctamente en dispositivos móviles y de escritorio utilizando CSS Grid y Flexbox. :: Gestión de Contacto: Integré un sistema de mensajería en tiempo real que utiliza websockets para enviar y recibir mensajes instantáneamente.",
-                    "features": "Optimización de Performance :: Diseño Responsivo :: Gestión de Contacto",
-                    "futureImprovements": "Optimización de Performance :: PWA: Convertir el portafolio en una Progressive Web App para ofrecer una experiencia similar a una aplicación nativa. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
-                    "linkGithub": "https://cuter97.github.io/portfolio-2024",
-                    "linkWeb": "https://cuter97.github.io/portfolio-2024",
-                    "technologies": "nextjs :: nodejs :: typescript"
+                    "description": "Este proyecto fue un desafío de frontend mentor. El desafío consiste en integrar la API de rel.ink en una interfaz de usuario web para crear URLs acortadas, que deben mostrarse de acuerdo con el diseño propuesto. Aproveché esta oportunidad para adquirir más experiencia con JavaScript asíncrono. Es uno de mis primeros proyectos y fue completado en 2022.",
+                    "challengesAndSolution": "Aprendí a trabajar con APIs y manejar operaciones asíncronas de manera efectiva. :: Diseñé la interfaz de usuario para cumplir con las especificaciones del desafío.",
+                    "features": "Integración con la API de rel.ink para acortar URLs :: Interfaz fácil de usar para crear y gestionar URLs acortadas.",
+                    "futureImprovements": "Mejorar la experiencia del usuario con características adicionales como análisis de enlaces y URLs acortadas personalizadas.",
+                    "technologies": "reactjs :: sass :: css"
                 }
             }
         }
     },
     "Technologies": {
-        "h3": "Skills",
+        "h3": "Habilidades",
+        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git",
         "skills": {
             "nestjs": {
                 "name": "Nest.js",
                 "@name": "@nestjs",
-                "description": "A progressive Node.js framework for building scalable server-side apps.",
-                "joined": "Joined December 2017"
+                "description": "Un framework progresivo de Node.js para construir aplicaciones del lado del servidor escalables.",
+                "joined": "Se unió en diciembre de 2017"
             },
             "nodejs": {
                 "name": "Node.js",
                 "@name": "@nodejs",
-                "description": "A JavaScript runtime built on Chrome's V8 engine, enabling server-side execution of JavaScript.",
-                "joined": "Joined May 2009"
+                "description": "Un entorno de ejecución de JavaScript basado en el motor V8 de Chrome, que permite la ejecución del lado del servidor.",
+                "joined": "Se unió en mayo de 2009"
             },
             "typescript": {
                 "name": "Typescript",
                 "@name": "@typescript",
-                "description": "A superset of JavaScript that adds static typing, enhancing developer productivity and code quality.",
-                "joined": "Joined October 2012"
+                "description": "Un superconjunto de JavaScript que añade tipado estático, mejorando la productividad del desarrollador y la calidad del código.",
+                "joined": "Se unió en octubre de 2012"
             },
             "reactjs": {
                 "name": "React.js",
                 "@name": "@reactjs",
-                "description": "A JavaScript library for building user interfaces, developed and maintained by Meta (Facebook).",
-                "joined": "Joined May 2013"
+                "description": "Una librería de JavaScript para construir interfaces de usuario, desarrollada y mantenida por Meta (Facebook).",
+                "joined": "Se unió en mayo de 2013"
             },
             "nextjs": {
                 "name": "Next.js",
                 "@name": "@nextjs",
-                "description": "A React-based framework for building server-side rendered applications.",
-                "joined": "Joined May 2018"
+                "description": "Un framework basado en React para construir aplicaciones renderizadas del lado del servidor.",
+                "joined": "Se unió en mayo de 2018"
             },
             "docker": {
                 "name": "Docker",
                 "@name": "@docker",
-                "description": "A platform for developing, shipping, and running applications inside containers.",
-                "joined": "Joined March 2013"
+                "description": "Una plataforma para desarrollar, distribuir y ejecutar aplicaciones dentro de contenedores.",
+                "joined": "Se unió en marzo de 2013"
             },
             "postgresql": {
                 "name": "PostgreSQL",
                 "@name": "@postgresql",
-                "description": "An open-source, object-relational database system known for its robustness and standards compliance.",
-                "joined": "Joined July 1996"
+                "description": "Un sistema de base de datos relacional y orientado a objetos de código abierto, conocido por su robustez y cumplimiento de estándares.",
+                "joined": "Se unió en julio de 1996"
             },
             "mongodb": {
                 "name": "MongoDB",
                 "@name": "@mongodb",
-                "description": "A NoSQL database that uses a document-oriented data model.",
-                "joined": "Joined February 2009"
+                "description": "Una base de datos NoSQL que utiliza un modelo de datos orientado a documentos.",
+                "joined": "Se unió en febrero de 2009"
             },
             "html": {
                 "name": "HTML",
                 "@name": "@html",
-                "description": "The standard markup language for documents designed to be displayed in a web browser.",
-                "joined": "Joined October 1991"
+                "description": "El lenguaje de marcado estándar para documentos diseñados para ser mostrados en un navegador web.",
+                "joined": "Se unió en octubre de 1991"
             },
             "css": {
                 "name": "CSS",
                 "@name": "@css",
-                "description": "A stylesheet language used to describe the presentation of a document written in HTML or XML.",
-                "joined": "Joined December 1996"
+                "description": "Un lenguaje de hojas de estilo utilizado para describir la presentación de un documento escrito en HTML o XML.",
+                "joined": "Se unió en diciembre de 1996"
             },
             "javascript": {
                 "name": "JavaScript",
                 "@name": "@javascript",
-                "description": "A versatile programming language that is widely used for web development, both on the client and server side.",
-                "joined": "Joined December 1995"
+                "description": "Un lenguaje de programación versátil que se usa ampliamente para el desarrollo web, tanto en el lado del cliente como del servidor.",
+                "joined": "Se unió en diciembre de 1995"
             },
             "expressjs": {
                 "name": "Express.js",
                 "@name": "@expressjs",
-                "description": "A minimal and flexible Node.js web application framework, providing a robust set of features to develop web and mobile applications.",
-                "joined": "Joined November 2010"
+                "description": "Un framework web mínimo y flexible para Node.js, que proporciona un conjunto robusto de características para desarrollar aplicaciones web y móviles.",
+                "joined": "Se unió en noviembre de 2010"
             },
             "graphql": {
                 "name": "GraphQL",
                 "@name": "@graphql",
-                "description": "A query language for APIs and a runtime for executing those queries by using a type system defined for your data.",
-                "joined": "Joined February 2015"
+                "description": "Un lenguaje de consultas para APIs y un entorno de ejecución para esas consultas utilizando un sistema de tipos definido para tus datos.",
+                "joined": "Se unió en febrero de 2015"
             },
             "git": {
                 "name": "Git",
                 "@name": "@git",
-                "description": "A distributed version control system that tracks changes in source code during software development.",
-                "joined": "Joined April 2005"
+                "description": "Un sistema de control de versiones distribuido que rastrea los cambios en el código fuente durante el desarrollo de software.",
+                "joined": "Se unió en abril de 2005"
+            },
+            "shadcnui": {
+                "name": "Shadcn/ui",
+                "@name": "@shadcn-ui",
+                "description": "Una colección de componentes de interfaz de usuario construidos con Radix y personalizados con Tailwind CSS.",
+                "joined": "Se unió en enero de 2023"
+            },
+            "i18n": {
+                "name": "i18n",
+                "@name": "@i18n",
+                "description": "Un sistema de internacionalización que permite gestionar múltiples idiomas en aplicaciones web.",
+                "joined": "Se unió en marzo de 2006"
+            },
+            "framermotion": {
+                "name": "Framer Motion",
+                "@name": "@framer-motion",
+                "description": "Una biblioteca de animación para React que permite crear animaciones fluidas y de alto rendimiento en aplicaciones web.",
+                "joined": "Se unió en abril de 2018"
+            },
+            "nats": {
+                "name": "NATS",
+                "@name": "@nats",
+                "description": "Un sistema de mensajería de alto rendimiento diseñado para aplicaciones nativas de la nube, que permite la comunicación entre servicios distribuidos.",
+                "joined": "Se unió en junio de 2016"
+            },
+            "mercadopago": {
+                "name": "Mercado Pago",
+                "@name": "@mercado_pago",
+                "description": "Una plataforma de pagos en línea que permite realizar transacciones de manera segura y eficiente, tanto para comerciantes como para consumidores.",
+                "joined": "Se unió en agosto de 2004"
+            },
+            "nextui": {
+                "name": "NextUI",
+                "@name": "@nextui",
+                "description": "Una biblioteca de UI moderna para React que proporciona un conjunto de componentes personalizables y responsivos para construir interfaces de usuario.",
+                "joined": "Se unió en julio de 2021"
+            },
+            "sass": {
+                "name": "SASS",
+                "@name": "@sass",
+                "description": "Un lenguaje de scripting preprocesado que se interpreta o compila en Hojas de Estilo en Cascada (CSS), añadiendo características como variables, reglas anidadas y mixins.",
+                "joined": "Se unió en 2006"
             }
         }
     },
@@ -245,41 +280,59 @@
         "university": {
             "one": {
                 "establishment": "Universidad Nacional de Rio Negro",
-                "carrer": "Ingenieria de Software",
-                "time": "2017 - 2023",
-                "link": "https://github.com/cuter97"
+                "carrer": "Ingeniería en Computación",
+                "time": "2023 - Actualidad",
+                "link": "https://www.unrn.edu.ar/carreras/Ingenieria-en-Computacion-78"
             },
             "two": {
                 "establishment": "Universidad Nacional de Rio Negro",
-                "carrer": "Ingenieria de Software",
-                "time": "2017 - 2023",
-                "link": "https://github.com/cuter97"
+                "carrer": "Ingeniería Electónica",
+                "time": "2017 - 2020",
+                "link": "https://www.unrn.edu.ar/carreras/Ingenieria-Electronica-5"
             }
         },
         "certification": {
             "one": {
-                "establishment": "Platzi",
-                "carrer": "Frontend Developer",
-                "time": "2022",
-                "link": "https://github.com/cuter97"
+                "establishment": "DevTalles",
+                "carrer": "NestJS + Microservicios: Aplicaciones escalables y modulares.",
+                "time": "2024",
+                "link": "https://cursos.devtalles.com/courses/nestjs-microservicios"
             },
             "two": {
-                "establishment": "Platzi",
-                "carrer": "Frontend Developer",
-                "time": "2022",
-                "link": "https://github.com/cuter97"
+                "establishment": "DevTalles",
+                "carrer": "Next.js: El framework de React para producción.",
+                "time": "2024",
+                "link": "https://cursos.devtalles.com/courses/nextjs"
             },
             "three": {
-                "establishment": "Platzi",
-                "carrer": "Frontend Developer",
+                "establishment": "Udemy",
+                "carrer": "Nest + GraphQL: Evoluciona tus APIs.",
+                "time": "2023",
+                "link": "https://www.udemy.com/course/nest-graphql/"
+            },
+            "four": {
+                "establishment": "Udemy",
+                "carrer": "Nest: Desarrollo de backend escalable con Node.",
+                "time": "2023",
+                "link": "https://www.udemy.com/course/nest-framework/"
+            },
+            "five": {
+                "establishment": "Udemy",
+                "carrer": "Complete NodeJS Developer in 2023 (GraphQL, MongoDB, + more).",
+                "time": "2023",
+                "link": "https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery"
+            },
+            "six": {
+                "establishment": "CoderHouse",
+                "carrer": "React.js",
                 "time": "2022",
-                "link": "https://github.com/cuter97"
+                "link": "https://www.coderhouse.com/ar/online/reactjs"
             }
         }
     },
     "Footer": {
         "h3": "¿Hablamos?",
         "mail": "aguscastets@gmail.com",
-        "copyright": "Portfolio made by Agustin Castets. Building software with ♥ from Bariloche to the world."
+        "copyright": "Portafolio hecho por Agustin Castets. Construyendo software con ♥ desde Bariloche para el mundo."
     }
 }

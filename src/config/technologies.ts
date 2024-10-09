@@ -1,5 +1,5 @@
-import { SiNestjs, SiNextdotjs, SiMongodb, SiExpress, SiGraphql } from "react-icons/si";
-import { FaNode, FaReact, FaDocker, FaHtml5, FaCss3Alt, FaGithub } from "react-icons/fa";
+import { SiNestjs, SiNextdotjs, SiMongodb, SiExpress, SiGraphql, SiI18Next, SiShadcnui, SiFramer, SiNatsdotio, SiMercadopago, SiNextui } from "react-icons/si";
+import { FaNode, FaReact, FaDocker, FaHtml5, FaCss3Alt, FaGithub, FaSass } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { IconType } from "react-icons/lib";
@@ -66,5 +66,33 @@ export const technologies: Record<string, Technology> = {
     git: {
         icon: FaGithub,
         color: 'group-hover:text-primary',
-    }
+    },
+    shadcnui: {
+        icon: SiShadcnui,
+        color: 'group-hover:text-primary',
+    },
+    i18n: {
+        icon: SiI18Next,
+        color: 'group-hover:text-[#009788]',
+    },
+    framermotion: {
+        icon: SiFramer,
+        color: 'group-hover:text-primary',
+    },
+    nats: {
+        icon: SiNatsdotio,
+        color: 'group-hover:text-primary',
+    },
+    mercadopago: {
+        icon: SiMercadopago,
+        color: 'group-hover:text-[#00BCFF]',
+    },
+    nextui: {
+        icon: SiNextui ,
+        color: 'group-hover:text-primary',
+    },
+    sass: {
+        icon: FaSass,
+        color: 'group-hover:text-[#CD6799]',
+    },
 };
