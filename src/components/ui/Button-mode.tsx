@@ -29,7 +29,7 @@ export const ButtonMode = ({ type, variant = 'outline' }: ButtonModeProps) => {
     const { setTheme } = useTheme()
     const locale = useLocale();
     const router = useRouter();
-    const [_isPending, startTransition] = useTransition();
+    const [, startTransition] = useTransition();
     const t = useTranslations('Header.btnType');
 
     const [open, setOpen] = useState(false);
