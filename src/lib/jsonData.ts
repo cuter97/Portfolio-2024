@@ -3,7 +3,7 @@ import path from 'path';
 
 export default async function JsonData(jsonPath: string) {
     // Crear la ruta absoluta al archivo dentro de la carpeta public/messages
-    const filePath = path.join(process.cwd(), 'public', 'messages', `en.json`);
+    const filePath = path.join(process.cwd(), 'public', 'messages', `es.json`);
     
     // Leer el archivo JSON desde la ruta
     const file = await fs.readFile(filePath, 'utf8');
