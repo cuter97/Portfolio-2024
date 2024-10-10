@@ -1,36 +1,51 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portafolio Personal
 
-## Getting Started
+Este es mi portafolio personal, donde presento mi experiencia, proyectos y habilidades como desarrollador Full Stack. Está construido utilizando tecnologías modernas y sigue las mejores prácticas de desarrollo web.
 
-First, run the development server:
+## Tecnologías Utilizadas
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js**: Framework de React para el desarrollo de aplicaciones web.
+- **Shadcn/ui**: Biblioteca de componentes UI altamente personalizables.
+- **Tailwind CSS**: Framework CSS utilitario para un diseño rápido y flexible.
+- **Framer Motion**: Biblioteca para animaciones fluidas e interactivas.
+- **i18n**: Implementación de internacionalización para soportar múltiples idiomas (inglés y español).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Características
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Soporte Multilenguaje**: El portafolio soporta inglés y español gracias a la implementación de i18n.
+- **Modo Claro/Oscuro**: Los usuarios pueden alternar entre un tema claro y oscuro para mejorar la accesibilidad.
+- **Diseño Responsivo**: Adaptado a múltiples dispositivos, garantizando una experiencia óptima tanto en móviles como en pantallas grandes.
+- **Animaciones Interactivas**: Se utilizan animaciones suaves para mejorar la experiencia del usuario.
+- **Despliegue en Vercel**: La aplicación está alojada y optimizada en Vercel para garantizar un rendimiento excelente y despliegue continuo.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Proyectos Destacados
 
-## Learn More
+- **TrainingPeek**: Página de entrenamiento que integra un sistema de registro y pasarela de pagos con Mercado Pago.
+- **DevtionIT**: Proyecto desarrollado para la empresa DevtionIT.
 
-To learn more about Next.js, take a look at the following resources:
+## Instalación
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Para ejecutar este proyecto localmente:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Clonar el repositorio:
+    ```bash
+    git clone https://github.com/tu-usuario/portafolio.git
+    ```
+2. Instalar las dependencias:
+    ```bash
+    npm install
+    ```
+3. Ejecutar el servidor de desarrollo:
+    ```bash
+    npm run dev
+    ```
 
-## Deploy on Vercel
+## Futuras Mejoras
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- **Panel de Administrador**: Plan para implementar un perfil de administrador que permita agregar contenido dinámico.
+- **Blog**: Incluir una sección de blog para compartir artículos y conocimientos sobre desarrollo web.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Contribuciones
+
+Las contribuciones están abiertas. Si tienes alguna sugerencia o mejora, por favor abre un PR o crea una issue.
+
