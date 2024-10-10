@@ -1,11 +1,16 @@
 import { promises as fs } from 'fs';
+import path from 'path';
 
-export default async function JsonData(path: string) {
-    const file = await fs.readFile(process.cwd() + '/messages/en.json', 'utf8');
+export default async function JsonData(jsonPath: string) {
+    // Crear la ruta absoluta al archivo dentro de la carpeta public/messages
+    const filePath = path.join(process.cwd(), 'public', 'messages', `en.json`);
+    
+    // Leer el archivo JSON desde la ruta
+    const file = await fs.readFile(filePath, 'utf8');
     const data = JSON.parse(file);
 
     // Llama a la función para obtener las propiedades de la ruta especificada
-    const propertiesArray = getPropertiesArray(data, path);
+    const propertiesArray = getPropertiesArray(data, jsonPath);
     return propertiesArray; // Devuelve el array de propiedades
 }
 

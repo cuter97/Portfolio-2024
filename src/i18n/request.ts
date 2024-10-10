@@ -9,9 +9,14 @@ export default getRequestConfig(async ({ locale }) => {
     // Validate that the incoming `locale` parameter is valid
     if (!routing.locales.includes(locale as 'en' | 'es')) notFound();
 
-    const filePath = path.join(process.cwd(), 'messages', `${locale}.json`);
-    const jsonData = fs.readFileSync(filePath, 'utf8');
-    return {
-        messages: JSON.parse(jsonData)
+    const filePath = path.join(process.cwd(), 'public', 'messages', `${locale}.json`);
+
+    try {
+        const jsonData = fs.readFileSync(filePath, 'utf-8');
+        const messages = JSON.parse(jsonData);
+
+        return { messages };
+    } catch (error) {
+        notFound();
     }
 });
