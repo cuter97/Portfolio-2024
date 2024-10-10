@@ -2,9 +2,9 @@ import { useTranslations } from "next-intl";
 import { CardProject } from "./CardProject"
 import JsonData from "@/lib/jsonData";
 
-export const ProjectsContainer = async () => {
+export const ProjectsContainer = async ({ locale }: { locale: string }) => {
     const t = useTranslations('Projects');
-    const dataCards = await JsonData('Projects.cards')
+    const dataCards = await JsonData(locale, 'Projects.cards')
     return (
         <>
             <h3 id="projects" className="md:text-3xl text-2xl mb-6 scroll-mt-20">{t('h3')}</h3>

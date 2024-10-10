@@ -1,10 +1,13 @@
+
 import { HeaderContent } from "@/components/header/HeaderContent";
 import { MainContent } from "@/components/main/MainContent";
 import { Animation } from "@/components/ui/Animation";
 import { Footer } from "@/components/ui/Footer";
 import { Toaster } from "@/components/ui/sonner";
+import { useLocale } from "next-intl";
 
 export default function Home() {
+    const locale = useLocale()
     return (
         <>
             <Animation />
@@ -12,7 +15,7 @@ export default function Home() {
                 <div id='home' className="relative col-span-1 xl:col-span-2 scroll-mt-32">
                     <HeaderContent className="sticky top-24 flex flex-col items-center xl:items-start" />
                 </div>
-                <MainContent className="flex flex-col xl:col-span-4" />
+                <MainContent locale={locale} className="flex flex-col xl:col-span-4" />
             </main>
             <Footer />
             <Toaster />
