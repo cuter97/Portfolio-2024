@@ -16,23 +16,25 @@ export const EducationLink = ({ type, link, establishment, carrer, time, tooltip
             <div>
                 <div className="flex flex-col">
                     <div className="flex items-center">
-                        {type === 'certification' ? (
-                            <Award className="w-6 h-6 mr-2 md:w-7 md:h-7" />
-                        ) : (
-                            <GraduationCap className="w-6 h-6 mr-2 md:w-7 md:h-7" />
-                        )}
+                        <div>
+                            {type === 'certification' ? (
+                                <Award className="w-6 h-6 mr-2 md:w-7 md:h-7" />
+                            ) : (
+                                <GraduationCap className="w-6 h-6 mr-2 md:w-7 md:h-7" />
+                            )}
+                        </div>
                         <ButtonType
                             type="link-card"
                             variant="linkcolorless"
-                            name={establishment}
+                            name={carrer}
                             link={link}
                             tooltip={tooltip}
                         />
                     </div>
                 </div>
-                <p className="ml-6 md:ml-9 mt-2 md:mt-0 text-muted-foreground text-sm md:text-md">{carrer}</p>
+                <p className="ml-7 md:ml-9 mt-2 md:mt-0 text-muted-foreground text-sm md:text-md">{establishment}</p>
             </div>
-            <span className="text-muted-foreground text-sm md:text-md mt-2 md:mt-0">{time}</span>
+            <span className="ml-7 md:ml-9 text-muted-foreground text-sm md:text-md mt-2 md:mt-0">{time}</span>
         </div>
     )
 }

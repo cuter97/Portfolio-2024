@@ -1,10 +1,12 @@
+import type { Metadata } from "next";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 
-import type { Metadata } from "next";
 import { cn } from "@/lib/utils";
+
 import { ThemeProvider } from "@/components/providers/theme-provider";
 
+import { Roboto_Mono } from 'next/font/google'
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,8 +17,6 @@ export const metadata: Metadata = {
     },
 };
 
-import { Roboto_Mono } from 'next/font/google'
-import { Navbar } from '@/components/ui/Navbar';
 const interRoboto = Roboto_Mono({ subsets: ['latin'], display: 'swap', })
 
 export default async function RootLayout({
@@ -42,7 +42,6 @@ export default async function RootLayout({
                         enableSystem
                         disableTransitionOnChange
                     >
-                        <Navbar />
                         {children}
                     </ThemeProvider>
                 </NextIntlClientProvider>

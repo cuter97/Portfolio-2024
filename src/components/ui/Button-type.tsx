@@ -54,7 +54,7 @@ export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link" }
             case "link":
                 return { asChild: true, variant: "icon", size: "icon" };
             case "link-card":
-                return { asChild: true, variant, className: "px-0 md:text-lg text-md whitespace-normal text-start" };
+                return { asChild: true, variant, className: "px-0 md:text-lg text-md whitespace-normal text-start h-auto" };
             case "email":
                 return { asChild: true, onClick: handleCopy, variant: copied ? "success" : "icon", size: "icon" };
             case "cv":
