@@ -76,14 +76,14 @@
                     "web": ""
                 },
                 "summary": "Un sitio web de portafolio para mostrar mis proyectos y habilidades.",
-                "content": "Construido con Next.js y Shadcn/ui. :: Soporta inglés y español.",
-                "badgets": "nextjs :: shadcnui",
+                "content": "Construido con Next.js y Tailwind CSS. :: Soporta inglés y español.",
+                "badgets": "nextjs :: tailwindcss",
                 "info": {
-                    "description": "Este proyecto es una plataforma personalizada para mostrar mi trabajo, habilidades y experiencia en desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
-                    "challengesAndSolution": "Modo Oscuro: Implementé un sistema dinámico para alternar entre modos claro y oscuro, mejorando la accesibilidad y la personalización de la experiencia del usuario. :: Soporte Multilingüe: Agregué soporte para inglés y español, permitiendo a los usuarios alternar fácilmente entre idiomas. :: Diseño Responsivo: El portafolio está completamente optimizado para dispositivos móviles, asegurando una visualización fluida y receptiva en todos los tamaños de pantalla.",
-                    "features": "Construido con Next.js y Shadcn/ui :: Animaciones creadas con Framer Motion :: Cambio de idioma implementado con i18n",
-                    "futureImprovements": "Perfil de Administrador: Me gustaría implementar un perfil de administrador para agregar y gestionar contenido de forma dinámica. :: Blog: Crear una sección de blog para compartir ideas y actualizaciones sobre mis proyectos y desarrollo web. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
-                    "technologies": "nextjs :: typescript :: shadcnui :: framermotion :: i18n"
+                    "description": "Este proyecto es una plataforma personalizada para exhibir mi trabajo, habilidades y experiencia en desarrollo web. Diseñado con un enfoque moderno y minimalista, el portafolio ofrece una experiencia de usuario intuitiva y visualmente atractiva.",
+                    "challengesAndSolution": "Modo Oscuro: Implementé un sistema dinámico para cambiar entre modos claro y oscuro, mejorando la accesibilidad y la personalización de la experiencia del usuario. :: Soporte Multilenguaje: Añadí soporte para inglés y español, permitiendo a los usuarios cambiar fácilmente entre idiomas. :: Diseño Responsivo: El portafolio está completamente optimizado para dispositivos móviles, asegurando una visualización fluida y responsiva en todos los tamaños de pantalla.",
+                    "features": "Construido con Next.js, Tailwind CSS y Shadcn/ui :: Animaciones creadas con Framer Motion :: Cambio de idioma implementado con i18n",
+                    "futureImprovements": "Perfil de Administrador: Me gustaría implementar un perfil de administrador para agregar y gestionar contenido dinámicamente. :: Blog: Crear una sección de blog para compartir ideas y actualizaciones sobre mis proyectos y desarrollo web. :: Sección de Proyectos Dinámica: Automatizar la carga de proyectos desde un repositorio de GitHub.",
+                    "technologies": "nextjs :: tailwindcss :: typescript :: shadcnui :: framermotion :: i18n"
                 }
             },
             "two": {
@@ -141,7 +141,7 @@
     },
     "Technologies": {
         "h3": "Habilidades",
-        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git",
+        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git :: tailwindcss",
         "skills": {
             "nestjs": {
                 "name": "Nest.js",
@@ -268,6 +268,12 @@
                 "@name": "@sass",
                 "description": "Un lenguaje de scripting preprocesado que se interpreta o compila en Hojas de Estilo en Cascada (CSS), añadiendo características como variables, reglas anidadas y mixins.",
                 "joined": "Se unió en 2006"
+            },
+            "tailwindcss": {
+                "name": "Tailwind",
+                "@name": "@tailwindcss",
+                "description": "Un framework CSS de utilidad primero que proporciona clases de utilidad de bajo nivel para construir diseños personalizados de manera rápida y eficiente.",
+                "joined": "Unido en noviembre de 2017"
             }
         }
     },

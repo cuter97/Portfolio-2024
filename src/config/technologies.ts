@@ -1,4 +1,4 @@
-import { SiNestjs, SiNextdotjs, SiMongodb, SiExpress, SiGraphql, SiI18Next, SiShadcnui, SiFramer, SiNatsdotio, SiMercadopago, SiNextui } from "react-icons/si";
+import { SiNestjs, SiNextdotjs, SiMongodb, SiExpress, SiGraphql, SiI18Next, SiShadcnui, SiFramer, SiNatsdotio, SiMercadopago, SiNextui, SiTailwindcss } from "react-icons/si";
 import { FaNode, FaReact, FaDocker, FaHtml5, FaCss3Alt, FaGithub, FaSass } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -88,11 +88,15 @@ export const technologies: Record<string, Technology> = {
         color: 'group-hover:text-[#00BCFF]',
     },
     nextui: {
-        icon: SiNextui ,
+        icon: SiNextui,
         color: 'group-hover:text-primary',
     },
     sass: {
         icon: FaSass,
         color: 'group-hover:text-[#CD6799]',
+    },
+    tailwindcss: {
+        icon: SiTailwindcss,
+        color: 'group-hover:text-[#0EA5E9]',
     },
 };

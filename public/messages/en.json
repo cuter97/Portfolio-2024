@@ -76,14 +76,14 @@
                     "web": ""
                 },
                 "summary": "A portfolio website to showcase my projects and skills.",
-                "content": "Built with Next.js and Shadcn/ui. :: Supports English and Spanish.",
-                "badgets": "nextjs :: shadcnui",
+                "content": "Built with Next.js and Tailwind CSS. :: Supports English and Spanish.",
+                "badgets": "nextjs :: tailwindcss",
                 "info": {
                     "description": "This project is a custom platform to showcase my work, skills, and experience in web development. Designed with a modern and minimalist approach, the portfolio offers an intuitive and visually appealing user experience.",
                     "challengesAndSolution": "Dark Mode: Implemented a dynamic system for switching between light and dark modes, enhancing accessibility and user experience personalization. :: Multilanguage Support: Added support for English and Spanish, allowing users to easily switch between languages. :: Responsive Design: The portfolio is fully optimized for mobile devices, ensuring smooth and responsive viewing across all screen sizes.",
-                    "features": "Built with Next.js and Shadcn/ui :: Animations created using Framer Motion :: Language switching implemented with i18n",
+                    "features": "Built with Next.js, Tailwind CSS, and Shadcn/ui :: Animations created using Framer Motion :: Language switching implemented with i18n",
                     "futureImprovements": "Admin Profile: I would like to implement an admin profile to dynamically add and manage content. :: Blog: Create a blog section to share insights and updates on my projects and web development. :: Dynamic Projects Section: Automate the loading of projects from a GitHub repository.",
-                    "technologies": "nextjs :: typescript :: shadcnui :: framermotion :: i18n"
+                    "technologies": "nextjs :: tailwindcss :: typescript :: shadcnui :: framermotion :: i18n"
                 }
             },
             "two": {
@@ -141,7 +141,7 @@
     },
     "Technologies": {
         "h3": "Skills",
-        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git",
+        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git :: tailwindcss",
         "skills": {
             "nestjs": {
                 "name": "Nest.js",
@@ -268,6 +268,12 @@
                 "@name": "@sass",
                 "description": "A preprocessor scripting language that is interpreted or compiled into Cascading Style Sheets (CSS), adding features like variables, nested rules, and mixins.",
                 "joined": "Joined in 2006"
+            },
+            "tailwindcss": {
+                "name": "Tailwind",
+                "@name": "@tailwindcss",
+                "description": "A utility-first CSS framework that provides low-level utility classes to build custom designs quickly and efficiently.",
+                "joined": "Joined in November 2017"
             }
         }
     },
