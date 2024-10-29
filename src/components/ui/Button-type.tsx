@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { toast } from "sonner"
 
@@ -32,6 +32,7 @@ type ButtonTypeProps = ButtonWithLink | ButtonWithoutLink;
 
 export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link" }: ButtonTypeProps) => {
     const t = useTranslations('Header');
+    const locale = useLocale()
 
     const [copied, setCopied] = useState(false);
 
@@ -68,13 +69,13 @@ export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link" }
         switch (type) {
             case "link":
                 return (
-                    <Link href={link!} target="_blank" >
+                    <Link href={link!} target="_blank"  rel="noopener noreferrer">
                         {Icon}
                     </Link>
                 )
             case "link-card":
                 return (
-                    <Link href={link!} target="_blank" className="group">
+                    <Link href={link!} target="_blank" className="group" rel="noopener noreferrer">
                         {name}<span className="group-hover:animate-bounce">{Icon}</span>
                     </Link>
                 );
@@ -82,7 +83,7 @@ export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link" }
                 return !copied ? <Mail /> : <Check />;
             case "cv":
                 return (
-                    <Link href="/pdf/curriculum.pdf" target="_blank">
+                    <Link href={`${locale === 'es' ? '/pdf/curriculum.pdf' : '/pdf/curriculum.pdf'}`} target="_blank" prefetch={false} rel="noopener noreferrer">
                         {Icon}
                     </Link>
                 );
