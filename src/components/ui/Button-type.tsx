@@ -83,7 +83,7 @@ export const ButtonType = ({ name, link, Icon, type, tooltip, variant = "link" }
                 return !copied ? <Mail /> : <Check />;
             case "cv":
                 return (
-                    <Link href={`${locale === 'es' ? '/pdf/curriculum.pdf' : '/pdf/curriculum.pdf'}`} target="_blank" prefetch={false} rel="noopener noreferrer">
+                    <Link href={`${locale === 'es' ? '/pdf/cv-es.pdf' : '/pdf/cv-en.pdf'}`} target="_blank" prefetch={false} rel="noopener noreferrer">
                         {Icon}
                     </Link>
                 );
