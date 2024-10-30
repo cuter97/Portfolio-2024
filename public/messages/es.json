@@ -47,7 +47,7 @@
             "cardTwo": {
                 "title": "Desarrollador Junior Full Stack",
                 "company": "DevtionIT",
-                "linkCompany": "https://devtionit.com",
+                "linkCompany": "https://www.devtionit.com",
                 "date": "Jul 2022  Feb 2023",
                 "site": "Buenos Aires, Argentina - Remoto",
                 "summary": "Desarrollo y mantenimiento de aplicaciones web utilizando React.js. Colaboré con el equipo para implementar nuevas funciones y corregir errores. Fortalecí mis habilidades en React al trabajar en grandes proyectos en equipo.",
@@ -331,10 +331,28 @@
                 "link": "https://www.udemy.com/course/complete-nodejs-developer-zero-to-mastery"
             },
             "six": {
+                "establishment": "Platzi",
+                "carrer": "Accesibilidad web",
+                "time": "2023",
+                "link": "https://platzi.com/cursos/accesibilidad-web"
+            },
+            "seven": {
                 "establishment": "CoderHouse",
                 "carrer": "React.js",
                 "time": "2022",
                 "link": "https://www.coderhouse.com/ar/online/reactjs"
+            },
+            "eight": {
+                "establishment": "CoderHouse",
+                "carrer": "JavaScript",
+                "time": "2021",
+                "link": "https://www.coderhouse.com/ar/online/javascript"
+            },
+            "nine": {
+                "establishment": "CoderHouse",
+                "carrer": "Desarrollo Web",
+                "time": "2021",
+                "link": "https://www.coderhouse.com/ar/online/desarrollo-web-online"
             }
         }
     },
