@@ -1,13 +1,13 @@
 'use client'
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useTheme } from "next-themes"
 
 import { Popover, PopoverContent, PopoverTrigger } from "./popover"
 import { Command, CommandGroup, CommandItem, CommandList } from "./command"
 import { Button } from "./button"
 
-import { Sun } from "lucide-react"
+import { Sun, Moon } from "lucide-react"
 
 const modes = [
     { value: "light", label: "Light" },
@@ -17,7 +17,12 @@ const modes = [
 
 export const ButtonMode = () => {
     const [open, setOpen] = useState(false);
-    const { setTheme } = useTheme()
+    const [mounted, setMounted] = useState(false)
+    const { setTheme, theme } = useTheme()
+
+    useEffect(() => {
+        setMounted(true) // Set mounted to true after component mounts
+    }, [])
 
     const handleSelect = (value: string) => {
         setTheme(value);
@@ -32,7 +37,7 @@ export const ButtonMode = () => {
                     size="lg"
                     className="px-4"
                 >
-                    <Sun className="w-6 h-6" />
+                    {mounted && (theme === "dark" ? <Moon className="w-6 h-6" /> : <Sun className="w-6 h-6" />)}
                 </Button>
             </PopoverTrigger>
             <PopoverContent className="p-0 w-[200px]">

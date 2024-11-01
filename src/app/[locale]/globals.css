@@ -16,6 +16,12 @@
 }
 
 @layer base {
+    html {
+        @apply scroll-smooth;
+    }
+}
+
+@layer base {
     :root {
         --gray: 0 0% 59%;
         --background: 0 0% 100%;
