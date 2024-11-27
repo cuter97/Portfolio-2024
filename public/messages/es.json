@@ -387,5 +387,9 @@
             "subtitle": "Reflexiones y consejos sobre desarrollo."
         },
         "btnSections": "Secciones Home"
+    },
+    "Blog": {
+        "title": "Blog, noticias y actualizaciones.",
+        "navTitle": "En Esta Página"
     }
 }

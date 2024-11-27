@@ -387,5 +387,9 @@
             "subtitle": "Reflections and tips on development."
         },
         "btnSections": "Home Sections"
+    },
+    "Blog": {
+        "title": "Blog, news and updates.",
+        "navTitle": "On This Page"
     }
 }

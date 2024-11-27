@@ -17,6 +17,7 @@ const badgeVariants = cva(
         outline: "text-foreground",
         linkOne: "h-6 border-transparent font-extrabold text-xs cursor-pointer bg-primary text-primary-foreground underline underline-offset-1 hover:decoration-dotted",
         linkTwo: "h-6 border-transparent font-light text-sm cursor-pointer dark:bg-orange-700 bg-primary dark:text-foreground text-muted",
+        blog: "h-6 font-normal text-sm border-transparent bg-orange-700 text-destructive-foreground shadow"
       },
     },
     defaultVariants: {

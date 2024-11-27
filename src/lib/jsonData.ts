@@ -1,5 +1,6 @@
 import { promises as fs } from 'fs';
 import path from 'path';
+import { BlogPost } from '@/interface/blog.interface'; 
 
 export default async function JsonData(locale: string, jsonPath: string) {
     // Crear la ruta absoluta al archivo dentro de la carpeta public/messages
@@ -33,4 +34,20 @@ const getNestedData = <T>(obj: Record<string, unknown>, path: string): T | undef
         }
         return undefined;
     }, obj) as T;
+};
+
+//Función que devulve el post en el idioma actual
+export const getPosts = async (locale: string): Promise<BlogPost[]> => {
+    const filePath = path.join(process.cwd(), `/public/blog/post-${locale}.json`);
+    const fileData = await fs.readFile(filePath, 'utf8');
+    return JSON.parse(fileData);
+};
+
+//Función que devulve el post por el slug
+export const getPostBySlug = async (slug: string, locale: string): Promise<BlogPost | null> => {
+    const filePath = path.join(process.cwd(), `/public/blog/post-${locale}.json`);
+    const fileData = await fs.readFile(filePath, "utf8");
+    const posts: BlogPost[] = JSON.parse(fileData);
+    
+    return posts.find((post) => post.slug === slug) || null;
 };

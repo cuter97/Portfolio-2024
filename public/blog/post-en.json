@@ -1,0 +1,86 @@
+[
+    {
+        "badge": "article",
+        "slug": "working-with-react-useeffect-hook",
+        "title": "Working with React's useEffect Hook",
+        "introduction": "React’s useEffect Hook is a powerful tool for managing side effects in function components. In this post, we explore common use cases, pitfalls, and best practices for using useEffect.",
+        "sections": [
+            {
+                "title": "Working with Web APIs (localStorage)",
+                "slugTitle": "working-with-web-apis-localstorage",
+                "description": "The useEffect Hook can be used to interact with the browser’s localStorage. Here's how to store, retrieve, and clean up data using useEffect.",
+                "image": "https://tsh.io/wp-content/uploads/2021/03/why-use-typescript-items2_.png",
+                "note": "The cleanup function ensures localStorage is cleared when the component unmounts, but consider keeping data persistent for better user experience."
+            },
+            {
+                "title": "Fetching Data From an External API",
+                "slugTitle": "fetching-data-from-an-external-api",
+                "description": "The useEffect Hook is commonly used to fetch data from APIs. Here's an example:",
+                "image": "https://tsh.io/wp-content/uploads/2021/03/why-use-typescript-items2_.png",
+                "note": "A cleanup function isn't always required for API calls."
+            },
+            {
+                "title": "Other Popular Side Effects",
+                "slugTitle": "other-popular-side-effects",
+                "subsections": [
+                    {
+                        "title": "Subscribing to Events",
+                        "slugTitle": "subscribing-to-events",
+                        "description": "You can use useEffect to manage event subscriptions like scroll events.",
+                        "image": "https://tsh.io/wp-content/uploads/2021/03/why-use-typescript-items2_.png"
+                    },
+                    {
+                        "title": "Modifying the Document Title",
+                        "slugTitle": "modifying-the-document-title",
+                        "description": "Change the document title dynamically.",
+                        "image": "https://tsh.io/wp-content/uploads/2021/03/why-use-typescript-items2_.png"
+                    },
+                    {
+                        "title": "Managing Timers",
+                        "slugTitle": "managing-timers",
+                        "description": "Set intervals and clear them on cleanup.",
+                        "image": "https://tsh.io/wp-content/uploads/2021/03/why-use-typescript-items2_.png"
+                    }
+                ]
+            },
+            {
+                "title": "Common useEffect Errors and How To Avoid Them",
+                "slugTitle": "common-useeffect-errors-and-how-to-avoid-them",
+                "description": "Understanding common useEffect errors and solutions.",
+                "subsections": [
+                    {
+                        "title": "Missing Dependency Array",
+                        "slugTitle": "missing-dependency-array",
+                        "description": "Forgetting the dependency array can lead to excessive re-renders.",
+                        "image": "https://tsh.io/wp-content/uploads/2021/03/why-use-typescript-items2_.png"
+                    },
+                    {
+                        "title": "Incorrect Dependency Array",
+                        "slugTitle": "incorrect-dependency-array",
+                        "description": "Provide the correct dependencies to avoid unexpected behavior.",
+                        "image": "https://tsh.io/wp-content/uploads/2021/03/why-use-typescript-items2_.png"
+                    },
+                    {
+                        "title": "Infinite Loops",
+                        "slugTitle": "infinite-loops",
+                        "description": "Avoid modifying dependencies directly within the effect.",
+                        "image": "https://tsh.io/wp-content/uploads/2021/03/why-use-typescript-items2_.png"
+                    },
+                    {
+                        "title": "Forgetting Cleanup",
+                        "slugTitle": "forgetting-cleanup",
+                        "description": "Always include cleanup functions for side effects.",
+                        "image": "https://tsh.io/wp-content/uploads/2021/03/why-use-typescript-items2_.png"
+                    }
+                ]
+            },
+            {
+                "title": "Conclusion",
+                "slugTitle": "conclusion",
+                "description": "React’s useEffect Hook provides great flexibility for managing side effects. By understanding common errors and following best practices, you can create efficient and bug-free applications."
+            }
+        ],
+        "date": "November 6, 2024",
+        "relatedSlug": "post-1"
+    }
+]
