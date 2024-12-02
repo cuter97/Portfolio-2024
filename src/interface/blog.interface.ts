@@ -1,18 +1,12 @@
 interface Section {
-    title: string;
     slugTitle: string;
-    description: string;
-    image?: string;
-    note?: string;
+    content: SectionsType[];
     subsections?: Subsection[];
 }
 
 interface Subsection {
-    title: string;
     slugTitle: string;
-    description?: string;
-    image?: string;
-    note?: string;
+    content: SectionsType[];
 }
 
 export interface BlogPost {
@@ -24,3 +18,11 @@ export interface BlogPost {
     date: string;
     relatedSlug: string;
 }
+
+export type SectionsType =
+    | { type: 'heading'; level: number; text: string }
+    | { type: 'paragraph'; text: string }
+    | { type: 'list'; items: string[] }
+    | { type: 'image'; src: string; alt: string }
+    | { type: 'note'; text: string }
+    | { type: 'code'; language: string; code: string };

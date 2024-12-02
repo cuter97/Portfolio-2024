@@ -57,38 +57,54 @@ export const NavbarBlog = ({ post }: Props) => {
         <nav className="space-y-2 sticky top-24 overflow-y-auto max-h-[calc(100vh-7rem)] pb-6">
             <h4 className="font-semibold text-lg">{t('navTitle')}</h4>
             <ul className="space-y-2 font-normal text-muted-foreground">
-                {post.sections.map((section) => (
-                    <li key={section.slugTitle}>
-                        <Link
-                            href={`#${section.slugTitle}`}
-                            className={clsx(
-                                'text-sm hover:underline',
-                                activeSlug === section.slugTitle && 'text-orange-600 font-extrabold'
+                {post.sections.map((section) => {
+                    // Extraer el título de la sección
+                    const sectionHeading = section.content.find(
+                        (block) => block.type === 'heading' && block.level === 2
+                    ) as { type: 'heading'; text: string } | undefined;
+
+                    return (
+                        <li key={section.slugTitle}>
+                            <Link
+                                href={`#${section.slugTitle}`}
+                                className={clsx(
+                                    'text-sm hover:underline',
+                                    activeSlug === section.slugTitle && 'text-orange-600 font-extrabold'
+                                )}
+                            >
+                                {sectionHeading?.text || 'Untitled Section'}
+                            </Link>
+                            {section.subsections && (
+                                <ul className="ml-4 space-y-2 mt-2">
+                                    {section.subsections.map((subsection) => {
+                                        // Extraer el título de la subsección
+                                        const subsectionHeading = subsection.content.find(
+                                            (block) => block.type === 'heading' && block.level === 3
+                                        ) as { type: 'heading'; text: string } | undefined;
+
+                                        return (
+                                            <li key={subsection.slugTitle}>
+                                                <Link
+                                                    href={`#${subsection.slugTitle}`}
+                                                    className={clsx(
+                                                        'text-sm hover:underline flex items-center space-x-1',
+                                                        activeSubsectionSlug === subsection.slugTitle && 'text-orange-600 font-extrabold'
+                                                    )}
+                                                >
+                                                    <span>
+                                                        <ChevronRight size={16} />
+                                                    </span>
+                                                    <span>{subsectionHeading?.text || 'Untitled Subsection'}</span>
+                                                </Link>
+                                            </li>
+                                        );
+                                    })}
+                                </ul>
                             )}
-                        >
-                            {section.title}
-                        </Link>
-                        {section.subsections && (
-                            <ul className="ml-4 space-y-2 mt-2">
-                                {section.subsections.map((subsection) => (
-                                    <li key={subsection.slugTitle}>
-                                        <Link
-                                            href={`#${subsection.slugTitle}`}
-                                            className={clsx(
-                                                'text-sm hover:underline flex items-center space-x-1',
-                                                activeSubsectionSlug === subsection.slugTitle && 'text-orange-600 font-extrabold'
-                                            )}
-                                        >
-                                            <span><ChevronRight size={16} /></span>
-                                            <span>{subsection.title}</span>
-                                        </Link>
-                                    </li>
-                                ))}
-                            </ul>
-                        )}
-                    </li>
-                ))}
+                        </li>
+                    );
+                })}
             </ul>
         </nav>
-    )
+    );
 }
