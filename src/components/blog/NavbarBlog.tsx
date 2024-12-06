@@ -16,7 +16,7 @@ export const NavbarBlog = ({ post }: Props) => {
     const [activeSubsectionSlug, setActiveSubsectionSlug] = useState<string | null>(null);
 
     useEffect(() => {
-        const sections = document.querySelectorAll('section[id]');
+        const sections = document.querySelectorAll('h2[id], section[id], h3[id]');
 
         const observer = new IntersectionObserver(
             (entries) => {
