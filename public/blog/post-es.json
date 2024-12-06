@@ -1,0 +1,568 @@
+[
+    {
+        "badge": "artículo",
+        "slug": "rendering-y-re-rendering-en-react",
+        "title": "Rendering y Re-Rendering en React",
+        "introduction": "En este articulo aprenderás lo que hay detras de un “rerender” en React, qué los provoca, cómo evitarlos y patrones a tener en cuenta para optimizar nuestras aplicaciones.",
+        "sections": [
+            {
+                "slugTitle": "rendering-introduction",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Introducción"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Entender los conceptos clave de una librería es esencial para sentirnos cómodos al trabajar con ella. Por eso, he decidido escribir este artículo sobre la piedra angular que dio origen a React: los “renders”. Aunque React ha evolucionado significativamente en los últimos meses, su esencia permanece intacta: crear interfaces basadas en componentes que devuelven JSX."
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Dominar el proceso de “renderizado” y los eventos que lo desencadenan es crucial para diseñar aplicaciones eficientes y construir una base sólida para seguir mejorando. Al final del día, trabajar con React siempre nos lleva a hablar de “renders”, así que, ¿por qué no entenderlos a fondo desde el principio?"
+                    }
+                ]
+            },
+            {
+                "slugTitle": "what-is-a-render-in-react",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Qué es un “render” en React"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Comencemos por lo  qué significa “render” en React. En esencia, un “render” es el proceso mediante el cual React envía al DOM el JSX devuelto por un componente. Este JSX se calcula a partir de tres elementos clave: "
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Las propiedades (props) que el componente recibe.",
+                            "El estado interno del componente.",
+                            "Los valores de los contextos que el componente consume a través de la API Context."
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Un componente se renderiza siempre que forme parte del árbol de componentes que hemos definido."
+                    },
+                    {
+                        "type": "image",
+                        "src": "https://res.cloudinary.com/dhu8pktj2/image/upload/v1733336511/blog/render%20and%20rerender/tmo1gem70yyqaffag77k.png",
+                        "alt": "Árbol de componentes"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Cuando el navegador carga nuestra aplicación por primera vez, React genera un árbol de componentes. Cada componente devuelve trozos de JSX que, combinados, definen la estructura completa de la interfaz. Sin embargo, esta estructura no es estática. A medida que el usuario interactúa con la aplicación, el árbol de componentes puede cambiar de diversas maneras: "
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Añadiendo nuevos componentes.",
+                            "Eliminando componentes existentes. ",
+                            "Modificando el estado o las props de los componentes ya presentes. "
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "El momento clave en este proceso es el “render inicial”, que ocurre cuando un componente aparece por primera vez en el árbol. Durante este primer render, el componente establece los valores iniciales de su estado. \n\n A partir de ahí, entramos en el terreno de los “rerenders”, donde las cosas se ponen realmente interesantes."
+                    }
+                ]
+            },
+            {
+                "slugTitle": "what-is-a-re-render",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Qué son los “rerenders”"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Un “rerender” es cualquier renderizado de un componente que ya se encuentra en el DOM y que no corresponde al “render inicial”."
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Los rerenders ocurren cuando hay un cambio en el estado de la aplicación, ya sea provocado por: "
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Acciones del usuario, como interactuar con un elemento de la interfaz.",
+                            "Actualizaciones externas, como la llegada de datos desde una API mediante una llamada fetch."
+                        ]
+                    }
+                ],
+                "subsections": [
+                    {
+                        "slugTitle": "when-is-a-re-render",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Tipos de “rerenders”"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Podemos clasificar los rerenders en dos grandes categorías: "
+                            },
+                            {
+                                "type": "list",
+                                "items": [
+                                    "Rerenders necesarios: Estos son los renderizados en los que el componente está directamente afectado por un cambio, y su nuevo JSX será diferente del anterior. Ejemplo: En un contador, cuando el usuario presiona el botón para incrementarlo, el componente necesita un nuevo renderizado para mostrar el valor actualizado.",
+                                    "Rerenders innecesarios: Estos ocurren cuando un componente se vuelve a renderizar incluso si no ha sido afectado por el cambio y genera el mismo JSX que en el render anterior."
+                                ]
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Causa habitual: Una estructura ineficiente o una mala planificación de nuestra aplicación."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Los rerenders innecesarios pueden afectar el rendimiento de la aplicación, por lo que identificarlos y evitarlos es clave para mantener una experiencia de usuario fluida. "
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "slugTitle": "why-does-a-component-re-render",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Razones por las que un componente se vuelve a renderizar"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Un componente puede volver a renderizarse por alguna de las siguientes razones:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Cambio en el estado interno (declarado mediante useState), generalmente como resultado de una acción del usuario, como hacer clic en un botón.",
+                            "Cambio en el contexto, si el componente está consumiendo un contexto y su valor se actualiza.",
+                            "Renderizado del componente padre, lo que provoca, por defecto, que todos los componentes hijos se rendericen nuevamente. "
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Veámoslas en detalle:"
+                    }
+                ],
+                "subsections": [
+                    {
+                        "slugTitle": "changes-in-state",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Cambios en el estado "
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Cuando declaramos una pieza de estado dentro de un componente utilizando el hook useState, cualquier cambio en ese estado, generado por la invocación de setState, provocará un nuevo render del componente."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "export const Counter = () => {\n  const [count, setCount] = useState(0);\n\n  return (\n    <div>\n      <p>Count: {count}</p>\n      <button onClick={() => setCount(count + 1)}>Increment</button>\n    </div>\n  );\n};"
+                            },
+                            {
+                                "type": "note",
+                                "text": "Cada vez que se actualiza el setCount, el componente se vuelve a renderizar."
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "changes-in-context",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Cambio en el contexto"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Cuando el valor de un contexto cambia, todos los componentes que estén consumiendo ese contexto a través del hook useContext se renderizarán de nuevo, para asegurarse de que la vista refleje la actualización."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "const ContContext = createContext(0);\n\nfunction App() {\n  const [count, setCount] = useState(0);\n\n  return (\n    <ContContext.Provider value={count}> \n      <Counter /> \n    </ContContext.Provider>\n  );\n}; \n"
+                            },
+                            {
+                                "type": "note",
+                                "text": "Cuando el estado count cambia, el contexto en el Provider recibe un nuevo valor. Como resultado, todos los componentes que utilizan useContext(ContContext) detectan este cambio y se vuelven a renderizar automáticamente."
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "rendering-the-parent-component",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Renderizado del componente padre"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Por defecto, un componente hijo se volverá a renderizar cada vez que su componente padre lo haga. Dicho de otra manera, cuando un componente se renderiza, todos sus componentes hijos también se renderizan, incluso si no hay cambios directos en ellos."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "function App() {\n  return (\n    <div>\n      <Component /> \n    </div>\n  );\n}\n\nfunction Component() {\n ... \n}\n"
+                            },
+                            {
+                                "type": "note",
+                                "text": "En este caso, el componente Component se renderiza cada vez que la App lo hace."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "slugTitle": "how-to-prevent-unnecessary-re-renders",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Cómo evitar “rerenders” innecesarios"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Ahora que conocemos las razones por las que un componente puede renderizarse, exploremos algunas técnicas que nos ayudarán a evitar los rerenders innecesarios y optimizar el rendimiento de nuestras aplicaciones. "
+                    }
+                ],
+                "subsections": [
+                    {
+                        "slugTitle": "place-state-at-the-bottom",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Situar el estado lo más abajo posible"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Esta técnica es útil cuando trabajamos con componentes complejos que gestionan múltiples estados, especialmente si algunos de ellos solo se utilizan en partes específicas del árbol de componentes."
+                            },
+                            {
+                                "type": "image",
+                                "src": "https://res.cloudinary.com/dhu8pktj2/image/upload/v1733499382/blog/render%20and%20rerender/gbarvy0hgjckm8iuv7mo.png",
+                                "alt": "Árbol de componentes con estado"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Por ejemplo, si el stateFour es únicamente relevante para el ComponentFour, mantenerlo en un nivel superior causará que cualquier cambio en este estado desencadene un renderizado de todo el árbol (recuerda: un render en un componente padre también renderiza a todos sus hijos). Esto puede ser ineficiente."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Para evitar este problema, podemos definir el stateFour directamente en ComponentFour, limitando su impacto y asegurando que los cambios solo afecten al componente que realmente lo necesita."
+                            },
+                            {
+                                "type": "image",
+                                "src": "https://res.cloudinary.com/dhu8pktj2/image/upload/v1733499408/blog/render%20and%20rerender/u2wjqegjlv0n7sk6axeu.png",
+                                "alt": "Árbol de componentes con estado modificado"
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "pass-components-as-props",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Pasar componentes como propiedades"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Esta técnica es especialmente útil cuando trabajamos con componentes costosos de renderizar que están contenidos dentro de un componente que se renderiza con frecuencia, como podría ser un formulario que gestiona inputs."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "const FormComponent = () => {\n  // Lógica y estado del componente\n\n  return (\n    <div>\n      <input type=\"text\" placeholder=\"Input 1\" />\n      <input type=\"text\" placeholder=\"Input 2\" />\n      <SlowComponent />\n    </div>\n  );\n};\n"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Cada vez que el componente FormComponent se renderiza, también se renderizan los inputs y el SlowComponent, lo cual puede afectar negativamente al rendimiento."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Para evitar este problema, podemos pasar el componente costoso como una propiedad, por ejemplo, mediante children. Esto funciona porque children es solo una referencia al componente, y React no lo vuelve a renderizar a menos que cambie explícitamente. Es como si el componente ya estuviera “pre-renderizado” ."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "const ParentComponent = () => {\n  return (\n    <FormComponent>\n      <SlowComponent />\n    </FormComponent>\n  );\n};\n\nconst FormComponent = ({ children }) => {\n  return (\n    <div>\n      <input type=\"text\" placeholder=\"Input 1\" />\n      <input type=\"text\" placeholder=\"Input 2\" />\n      {children}\n    </div>\n  );\n};\n"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Esta técnica, conocida como “envolver el estado alrededor de los hijos”, es muy útil para optimizar casos similares."
+                            },
+                            {
+                                "type": "note",
+                                "text": "Este enfoque no se limita a la propiedad children: podemos definir cualquier número de propiedades en un componente y aprovechar este patrón para evitar renders innecesarios."
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "avoid-creating-components-inside-others",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Evita crear componentes dentro de otros"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Es importante evitar un antipatrón que puede ocasionar problemas de rendimiento significativos: definir un componente dentro de otro."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "function SomeComponent() {\n    const OtherComponent = () => {\n        const [state, setState] = useState();\n        useEffect(() => {\n            // Lógica del efecto\n        }, []);\n\n        return <div>Contenido del componente</div>;\n    };\n\n    return (\n        <div>\n            <OtherComponent />\n        </div>\n    );\n}"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Este código incluye el componente OtherComponent definido dentro de SomeComponent, lo cual es un antipatrón en React porque ocasiona que el componente OtherComponent se vuelva a montar y ejecutar todos sus efectos cada vez que SomeComponent se renderiza. Esto puede ser ineficiente y llevar a problemas de rendimiento."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "slugTitle": "memorize-components-with-react-memo",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Memorizar componentes con React.memo"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "La función memo de React nos permite optimizar componentes funcionales envolviéndolos para evitar renders innecesarios. Si las propiedades (props) del componente no han cambiado desde el render anterior, React reutiliza el resultado previo, mejorando el rendimiento. Para quienes han trabajado con componentes de clase, memo actúa de manera similar a la función shouldComponentUpdate, que permitía decidir si un componente debía actualizarse o no. Veamos cómo usar memo con algunos ejemplos prácticos."
+                    }
+                ],
+                "subsections": [
+                    {
+                        "slugTitle": "component-without-properties",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Componente sin propiedades"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "En este caso, el componente que estamos envolviendo con React.memo no recibe ninguna propiedad (props). Como resultado, este componente no se volverá a renderizar ni siquiera cuando el componente padre lo haga, ya que no depende de datos externos."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Esto hace que la optimización sea aún más sencilla, ya que no necesitamos verificar si las propiedades han cambiado, ya que simplemente no hay propiedades para verificar."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "const NoPropsComponent = React.memo(() => {\n    console.log('Renderizando NoPropsComponent');\n    return <div>Este componente no tiene propiedades</div>;\n});\n\nconst ParentComponent = () => {\n    const [count, setCount] = useState(0);\n\n    return (\n        <div>\n            <button onClick={() => setCount(prevCount => prevCount + 1)}>Incrementar</button>\n            <NoPropsComponent />\n        </div>\n    );\n};"
+                            },
+                            {
+                                "type": "note",
+                                "text": "En este ejemplo, cada vez que ParentComponent se renderiza (por ejemplo, cuando se incrementa count), el NoPropsComponent no se renderiza de nuevo, ya que no tiene propiedades y su renderizado no depende de ningún cambio en el estado del componente padre."
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "component-with-props",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Componente con propiedades"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Cuando un componente memorizado con React.memo recibe propiedades, solo se volverá a renderizar cuando alguna de esas propiedades cambie. Si las propiedades no cambian entre renders, React evitará el renderizado innecesario, lo que puede mejorar el rendimiento."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "const ExpensiveComponent = React.memo(({ value }) => {\n    console.log('Renderizando ExpensiveComponent');\n    return <div>El valor es: {value}</div>;\n});\n\nconst ParentComponent = () => {\n    const [count, setCount] = useState(0);\n    const [value, setValue] = useState('valor inicial');\n\n    return (\n        <div>\n            <button onClick={() => setCount(prevCount => prevCount + 1)}>Incrementar</button>\n            <button onClick={() => setValue(prevValue => prevValue === 'valor inicial' ? 'nuevo valor' : 'valor inicial')}>Cambiar valor</button>\n            <ExpensiveComponent value={value} />\n        </div>\n    );\n};"
+                            },
+                            {
+                                "type": "note",
+                                "text": "En este ejemplo, ExpensiveComponent solo se volverá a renderizar si el valor de value cambia. Aunque el estado count en ParentComponent cambie (cuando se haga clic en el primer botón) ExpensiveComponent no se volverá a renderizar si value no cambia."
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "combine-usememo-usecallback-with-memo",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Combinar useMemo / useCallback con memo"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "En React, `memo` es una herramienta poderosa para evitar renders innecesarios de un componente, pero ¿qué sucede cuando las propiedades del componente son funciones, objetos o arrays? En estos casos, `memo` no tendrá el efecto esperado si no usamos los hooks adecuados. Veamos cómo podemos mejorar esto."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Cuando pasamos funciones u objetos como propiedades a un componente memoizado, si esos valores cambian en cada render, la memorización no surtirá efecto. Esto se debe a que React interpreta que las nuevas funciones u objetos son valores diferentes, incluso si el contenido es el mismo. Vamos a verlo con algunos ejemplos."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "import { memo } from 'react';\n\nconst Child = ({ onClick }) => <button onClick={onClick}>Click me</button>;\n\nconst MemorizedChild = memo(Child);\n\nconst Parent = () => {\n    const handleClick = () => console.log('Clicked!');\n\n    return (\n        <div>\n            <MemorizedChild onClick={handleClick} />\n        </div>\n    );\n};"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "En este ejemplo, el componente `Parent` crea una nueva función `handleClick` en cada render. Aunque la lógica de la función es la misma, React crea una nueva referencia cada vez, lo que hace que `MemorizedChild` reciba un nuevo valor para `onClick` y, por lo tanto, se vuelva a renderizar innecesariamente."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Otro caso común es cuando pasamos un objeto como propiedad. Veamos el siguiente ejemplo."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "import { memo } from 'react';\n\nconst Child = ({ pet }) => <div>{pet.name}</div>;\n\nconst MemorizedChild = memo(Child);\n\nconst Parent = () => {\n    const pet = { name: 'Fido' };\n\n    return (\n        <div>\n            <MemorizedChild pet={pet} />\n        </div>\n    );\n};"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "En este caso, `Parent` crea un nuevo objeto `pet` en cada render. Aunque el contenido del objeto no cambia, su referencia sí lo hace, lo que hace que `MemorizedChild` reciba un nuevo objeto en cada render y se vuelva a renderizar innecesariamente."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Afortunadamente, React nos ofrece los hooks `useMemo` y `useCallback` para evitar la creación de nuevas instancias de objetos y funciones en cada render. Veamos cómo podemos mejorar estos ejemplos."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "El hook `useMemo` memoriza un valor calculado entre renders, y solo lo recalcula si sus dependencias cambian. Recibe dos parámetros:"
+                            },
+                            {
+                                "type": "list",
+                                "items": [
+                                    "1. Una función que devuelve el valor que debe ser memorizado.",
+                                    "2. Un array de dependencias, similar al hook `useEffect`. La función se ejecutará solo si las dependencias cambian."
+                                ]
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Por otro lado, `useCallback` memoriza funciones de la misma manera. Recibe dos parámetros:"
+                            },
+                            {
+                                "type": "list",
+                                "items": [
+                                    "1. La función que debe ser memorizada.",
+                                    "2. Un array de dependencias. Si alguna de las dependencias cambia, la función se recalcula; si no, se reutiliza la misma instancia."
+                                ]
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "import { useMemo, useCallback } from 'react';\n\nconst ParentComponent = ({ name }) => {\n    const pet = useMemo(() => ({ name }), [name]);\n\n    const logName = useCallback(() => {\n        console.log(name);\n    }, [name]);\n\n    return (\n        <div>\n            ...\n        </div>\n    );\n};"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Con esto, los ejemplos anteriores pueden mejorarse para evitar renders innecesarios. Veamos cómo aplicar `useMemo` y `useCallback` para mejorar los ejemplos."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Para el caso de la función `onClick`, podemos memorizarla con `useCallback`, asegurándonos de que su referencia nunca cambie entre renders."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "import { memo, useCallback } from 'react';\n\nconst Child = ({ onClick }) => <button onClick={onClick}>Press</button>;\n\nconst MemorizedChild = memo(Child);\n\nconst Parent = () => {\n    const handleClick = useCallback(() => {\n        console.log('Clicked!');\n    }, []);\n\n    return (\n        <div>\n            <MemorizedChild onClick={handleClick} />\n        </div>\n    );\n};"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Aquí, `handleClick` se memoriza con `useCallback`, lo que asegura que su referencia se mantenga constante entre renders. Así evitamos que `MemorizedChild` se vuelva a renderizar innecesariamente."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Para el caso del objeto `pet`, podemos usar `useMemo` para memorizarlo, lo que garantiza que `MemorizedChild` siempre reciba el mismo objeto y no se renderice innecesariamente."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "import { memo, useMemo } from 'react';\n\nconst Child = ({ pet }) => <div>{pet.name}</div>;\n\nconst MemorizedChild = memo(Child);\n\nconst Parent = () => {\n    const pet = useMemo(() => ({ name: 'Fido' }), []);\n\n    return (\n        <div>\n            <MemorizedChild pet={pet} />\n        </div>\n    );\n};"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Aquí, usamos `useMemo` para memorizar el objeto `pet`, lo que evita que `MemorizedChild` reciba una nueva referencia en cada render, incluso si el contenido no cambia."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Si el nombre llegara como propiedad de `ParentComponent`, también podríamos memorizar el objeto para evitar renders cuando el valor de `name` no cambie."
+                            },
+                            {
+                                "type": "code",
+                                "language": "javascript",
+                                "code": "import { memo, useMemo } from 'react';\n\nconst Child = ({ pet }) => <div>{pet.name}</div>;\n\nconst MemorizedChild = memo(Child);\n\nconst Parent = ({ name }) => {\n    const pet = useMemo(() => ({ name }), [name]);\n\n    return (\n        <div>\n            <MemorizedChild pet={pet} />\n        </div>\n    );\n};"
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "usememo-for-components-with-heavy-props",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "useMemo para componentes pesados"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "useMemo se puede utilizar para memorizar cualquier valor, incluidos componentes, lo que nos permite optimizar el rendimiento de aquellos que sabemos que son costosos de renderizar. Funciona de manera similar a la función memo, pero es importante recordar que memorizar valores también tiene un costo, ya que consume memoria e impacta en el primer renderizado."
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Por ello, es fundamental no abusar de estas optimizaciones a menos que estemos seguros de que los beneficios superarán los costos asociados. En general, memorizar componentes tiene más sentido en escenarios como:"
+                            },
+                            {
+                                "type": "list",
+                                "items": [
+                                    "Listas largas, donde cada render podría ser costoso.",
+                                    "Componentes pesados que realizan cálculos complejos o tienen estructuras internas grandes."
+                                ]
+                            },
+                            {
+                                "type": "note",
+                                "text": "Como regla general, utiliza useMemo para componentes pesados solo cuando se haya identificado un impacto de rendimiento real, ya que, en exceso, puede llevar a un mayor consumo de recursos."
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "slugTitle": "conclusion",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Conclusiones"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Con este artículo, hemos cubierto diversas técnicas de React para evitar renders innecesarios, lo que puede mejorar significativamente el rendimiento de tus aplicaciones."
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Mi consejo es que primero te familiarices con las distintas causas que pueden desencadenar un renderizado y aprendas a identificar qué componentes son susceptibles de ser optimizados. Con los enfoques que te he explicado, podrás hacer que tu aplicación sea más eficiente, y, al mismo tiempo, entenderás mejor cómo funciona el sistema de renderizado de React."
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Dominar estas técnicas no solo te permitirá escribir código más eficiente, sino que también profundizará tu comprensión de cómo React maneja la actualización y renderización de la interfaz de usuario, lo que es clave para construir aplicaciones rápidas y de alto rendimiento."
+                    }
+                ]
+            }
+        ],
+        "date": "6 de noviembre de 2024",
+        "relatedSlug": "post-1"
+    }
+]

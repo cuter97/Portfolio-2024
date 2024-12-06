@@ -360,5 +360,36 @@
         "h3": "Let's Talk?",
         "mail": "aguscastets@gmail.com",
         "copyright": "Portfolio made by Agustin Castets. Building software with ♥ from Bariloche to the world."
+    },
+    "Nav": {
+        "home": {
+            "title": "Home",
+            "subtitle": "Discover my journey and what drives me to keep learning."
+        },
+        "experience": {
+            "title": "Experience",
+            "subtitle": "My roles and professional achievements."
+        },
+        "projects": {
+            "title": "Projects",
+            "subtitle": "Some of the projects I've developed."
+        },
+        "skills": {
+            "title": "Skills",
+            "subtitle": "Tools and technologies I master."
+        },
+        "education": {
+            "title": "Education",
+            "subtitle": "My academic background and courses."
+        },
+        "blog": {
+            "title": "Blog",
+            "subtitle": "Reflections and tips on development."
+        },
+        "btnSections": "Home Sections"
+    },
+    "Blog": {
+        "title": "Blog, news and updates.",
+        "navTitle": "On This Page"
     }
 }
