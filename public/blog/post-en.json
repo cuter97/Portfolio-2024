@@ -171,7 +171,7 @@
                             },
                             {
                                 "type": "note",
-                                "text": "Every time setCount is updated, the component re-renders."
+                                "text": "Each time the state is updated with setCount, the component is rendered again."
                             }
                         ]
                     },
