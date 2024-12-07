@@ -13,11 +13,7 @@ export const ArticleBlogPost = ({ post }: Props) => {
         switch (block.type) {
             case 'heading':
                 const headingClasses = block.level === 2 ? 'text-2xl font-bold mt-10' : 'text-xl font-semibold mb-1 mt-6';
-                return createElement(
-                    `h${block.level}`,
-                    { key, className: headingClasses, id: slug },
-                    block.text
-                );
+                return createElement(`h${block.level}`, { key, className: headingClasses, id: slug }, block.text);
             case 'paragraph':
                 return <p key={key}>{block.text}</p>;
             case 'list':
@@ -38,8 +34,8 @@ export const ArticleBlogPost = ({ post }: Props) => {
                 return <p key={key} className="border-l-4 border-orange-600 pl-2 my-4">{block.text}</p>;
             case 'code':
                 return (
-                    <div className="my-8">
-                        <pre key={key} className={`language-${block.language} rounded-md`}>
+                    <div key={key} className="my-8">
+                        <pre className={`language-${block.language} rounded-md`}>
                             <code
                                 dangerouslySetInnerHTML={{
                                     __html: Prism.highlight(
@@ -58,7 +54,7 @@ export const ArticleBlogPost = ({ post }: Props) => {
     };
 
     return (
-        <article className="space-y-6">
+        <article className="space-y-6 scroll-mt-32" id={post.slug}>
             <h1 className="text-2xl md:text-3xl font-bold">{post.title}</h1>
             <p>{post.introduction}</p>
             {post.sections.map((section) => (
