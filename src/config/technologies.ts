@@ -1,5 +1,5 @@
-import { SiNestjs, SiNextdotjs, SiMongodb, SiExpress, SiGraphql, SiI18Next, SiShadcnui, SiFramer, SiNatsdotio, SiMercadopago, SiNextui, SiTailwindcss } from "react-icons/si";
-import { FaNode, FaReact, FaDocker, FaHtml5, FaCss3Alt, FaGitAlt, FaSass } from "react-icons/fa";
+import { SiApachemaven, SiSpringsecurity, SiSpringboot, SiSpring, SiNestjs, SiNextdotjs, SiMongodb, SiExpress, SiGraphql, SiI18Next, SiShadcnui, SiFramer, SiNatsdotio, SiMercadopago, SiNextui, SiTailwindcss } from "react-icons/si";
+import { FaNode, FaReact, FaDocker, FaHtml5, FaCss3Alt, FaGitAlt, FaSass, FaJava } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
 import { IconType } from "react-icons/lib";
@@ -99,4 +99,24 @@ export const technologies: Record<string, Technology> = {
         icon: SiTailwindcss,
         color: 'group-hover:text-[#0EA5E9]',
     },
+    java: {
+        icon: FaJava,
+        color: 'group-hover:text-[#0670B7]',
+    },
+    spring_framework: {
+        icon: SiSpring,
+        color: 'group-hover:text-[#6bb344]',
+    },
+    spring_security: {
+        icon: SiSpringsecurity,
+        color: 'group-hover:text-[#6bb344]',
+    },
+    spring_boot: {
+        icon: SiSpringboot,
+        color: 'group-hover:text-[#6bb344]',
+    },
+    maven: {
+        icon: SiApachemaven,
+        color: 'group-hover:text-[#bf4230]',
+    }
 };

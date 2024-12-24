@@ -141,7 +141,7 @@
     },
     "Technologies": {
         "h3": "Skills",
-        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git :: tailwindcss",
+        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git :: tailwindcss :: java :: spring_framework :: spring_security :: spring_boot :: maven",
         "skills": {
             "nestjs": {
                 "name": "Nest.js",
@@ -274,6 +274,36 @@
                 "@name": "@tailwindcss",
                 "description": "A utility-first CSS framework that provides low-level utility classes to build custom designs quickly and efficiently.",
                 "joined": "Joined in November 2017"
+            },
+            "java": {
+                "name": "Java",
+                "@name": "@java",
+                "description": "A high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.",
+                "joined": "Joined in January 1996"
+            },
+            "spring_framework": {
+                "name": "Spring Framework",
+                "@name": "@spring_framework",
+                "description": "The core of the Spring ecosystem, providing an Inversion of Control (IoC) container and tools for building enterprise-grade Java applications.",
+                "joined": "Joined in October 2002"
+            },
+            "spring_security": {
+                "name": "Spring Security",
+                "@name": "@spring_security",
+                "description": "A framework within the Spring ecosystem for authentication and authorization, designed to secure Java applications robustly.",
+                "joined": "Joined in May 2004"
+            },
+            "spring_boot": {
+                "name": "Spring Boot",
+                "@name": "@spring_boot",
+                "description": "A tool that simplifies Spring application setup and development by providing a fast, minimalist approach to configuration.",
+                "joined": "Joined in April 2014"
+            },
+            "maven": {
+                "name": "Maven",
+                "@name": "@maven",
+                "description": "A project management and build tool for Java that uses a dependency model and a POM file to automate common tasks.",
+                "joined": "Joined in July 2004"
             }
         }
     },
@@ -300,6 +330,12 @@
             }
         },
         "certification": {
+            "zero": {
+                "establishment": "Udemy",
+                "carrer": "Spring Framework 6 & Spring Boot 3 desde cero a experto",
+                "time": "2024",
+                "link": "https://www.udemy.com/course/spring-framework-5"
+            },
             "one": {
                 "establishment": "DevTalles",
                 "carrer": "NestJS + Microservicios: Aplicaciones escalables y modulares.",
