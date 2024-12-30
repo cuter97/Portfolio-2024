@@ -1,6 +1,277 @@
 [
     {
         "badge": "article",
+        "slug": "nest-vs-spring",
+        "title": "Nest.js vs Spring: Backend Framework Comparison",
+        "introduction": "Backend development offers a wide variety of frameworks to create robust, scalable, and efficient web applications. Two of the most prominent options are Nest.js and Spring. In this article, we will explore their differences and similarities in key aspects such as architecture, ecosystem, language, ease of use and performance",
+        "sections": [
+            {
+                "slugTitle": "architecture",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Architecture"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "The architecture of a framework defines how applications are structured and organized, which significantly impacts scalability, maintainability, and flexibility. Choosing the right architectural approach is crucial to meet the specific needs of your application."
+                    }
+                ],
+                "subsections": [
+                    {
+                        "slugTitle": "spring-framework",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Spring Framework"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Spring is a mature and versatile framework based on patterns like MVC (Model-View-Controller). Its core is the Inversion of Control (IoC) container, which manages the dependencies of applications. It provides flexibility to build both monolithic applications and microservices-based applications, thanks to tools like Spring Boot, which simplifies initial configuration."
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "nestjs",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Nest.js"
+                            },
+                            {
+                                "type": "paragraph",
+                                "text": "Nest.js adopts a modular architecture inspired by Angular, where decorators and classes play a key role. This modular approach makes it easy to organize code into independent modules, which is ideal for scalable and microservices-based projects. Compared to other modern frameworks like Express or Fastify, Nest.js stands out for offering a clearer and more robust structure, reducing configuration effort and enabling more organized development from the start. It also includes native support for dependency injection patterns."
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "comparison",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Comparison"
+                            },
+                            {
+                                "type": "list",
+                                "items": [
+                                    "Nest.js offers a more modern and modular design from the start.",
+                                    "Spring is more mature and flexible, allowing both traditional and modern architectures."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "slugTitle": "ecosystem-spring",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Spring Ecosystem"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "The Spring ecosystem is vast and proven, with tools like:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Spring Boot: Simplifies configuration and deployment of applications.",
+                            "Spring Data: Facilitates interaction with databases.",
+                            "Spring Security: Provides a robust system for authentication and authorization management.",
+                            "Spring Web: Offers a complete set of tools to develop web applications."
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Its community is one of the largest in the backend development world, offering commercial support and extensive documentation."
+                    }
+                ]
+            },
+            {
+                "slugTitle": "ecosystem-nest",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Nest.js Ecosystem"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Although younger, Nest.js has a rapidly growing ecosystem. It offers modern integrations for:"
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Databases: TypeORM, Prisma, Mongoose.",
+                            "Advanced APIs: GraphQL, WebSockets.",
+                            "Microservices: Tools to create and manage distributed services."
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Nest.js' community is active and constantly expanding, though it does not yet match the size of Spring's community."
+                    }
+                ]
+            },
+            {
+                "slugTitle": "languages-java-vs-typescript",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Programming Language: Java vs TypeScript"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Spring is based on **Java**, a robust and widely used language in enterprise environments. It is also compatible with other languages like Kotlin and Groovy, offering some flexibility."
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Nest.js is written in **TypeScript**, a superset of **JavaScript** with static typing. This makes it particularly attractive for developers coming from the frontend or those looking for a modern language for agile projects."
+                    }
+                ],
+                "subsections": [
+                    {
+                        "slugTitle": "java-or-typescript",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Comparison: Java or TypeScript"
+                            },
+                            {
+                                "type": "list",
+                                "items": [
+                                    "Java excels in critical enterprise applications, offering a solid foundation for large-scale, long-term projects.",
+                                    "TypeScript presents itself as the modern option for agile teams that prefer to work with frontend technologies and want to leverage static typing to improve code quality and productivity."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "slugTitle": "ease-of-use",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Ease of Use"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Spring has a steep learning curve due to its flexibility and power. However, Spring Boot significantly simplifies the initial configuration, enabling the creation of production-ready applications in no time."
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Nest.js is more intuitive and beginner-friendly, especially for those familiar with TypeScript. Its modular structure and code generators make development easier."
+                    }
+                ]
+            },
+            {
+                "slugTitle": "performance",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Performance"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "Performance is a critical factor in backend development and should be evaluated in terms of CPU consumption, memory usage, and the overall impact on development costs."
+                    }
+                ],
+                "subsections": [
+                    {
+                        "slugTitle": "cpu-performance",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "CPU"
+                            },
+                            {
+                                "type": "list",
+                                "items": [
+                                    "Nest.js: Built on Node.js, it uses a single-threaded event loop model. This makes it highly efficient for I/O-intensive applications. Some benchmarks show up to 20% less CPU usage in such cases compared to multi-threaded models.",
+                                    "Spring Framework: Built on Java, it uses a multi-threaded model. This makes it more efficient for CPU-intensive tasks, offering up to 30% better performance in such scenarios."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "memory-performance",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Memory"
+                            },
+                            {
+                                "type": "list",
+                                "items": [
+                                    "Nest.js: Thanks to its modular and minimalist design, it can reduce memory usage by up to 40% in applications similar to those built in Spring Framework.",
+                                    "Spring Framework: Consumes more memory due to its wide set of features. A typical enterprise application may require 200–300 MB more memory than its equivalent in Nest.js."
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "slugTitle": "development-costs",
+                        "content": [
+                            {
+                                "type": "heading",
+                                "level": 3,
+                                "text": "Development Costs"
+                            },
+                            {
+                                "type": "list",
+                                "items": [
+                                    "Nest.js: Its base in JavaScript, a language known by 67.7% of developers, can shorten the learning curve and reduce development costs if the team is already proficient in JavaScript.",
+                                    "Spring Framework: It may require specialized knowledge of Java, which could increase training costs if the team lacks prior experience."
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "slugTitle": "conclusion",
+                "content": [
+                    {
+                        "type": "heading",
+                        "level": 2,
+                        "text": "Conclusions"
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "How to choose between Nest.js and Spring Framework? It largely depends on the specific needs of your project and the experience of your development team."
+                    },
+                    {
+                        "type": "list",
+                        "items": [
+                            "Nest.js, based on modern JavaScript, is an accessible option for teams already proficient in JavaScript. Its leaner architecture and potentially lower memory footprint may result in reduced resource consumption and faster development times. Additionally, its single-threaded event loop model is perfect for I/O-intensive applications.",
+                            "On the other hand, Spring Framework stands out for its robust feature set and multi-threaded model, ideal for more complex and CPU-intensive tasks. While memory usage may be higher and development costs may be higher for Java, the wide functionality Spring offers is a worthwhile trade-off for certain projects."
+                        ]
+                    },
+                    {
+                        "type": "paragraph",
+                        "text": "The key to choosing between these frameworks is to fully understand the project requirements and carefully evaluate the pros and cons of each. With this information, you can ensure the success of your project."
+                    }
+                ]
+            }
+        ],
+        "date": "December 29, 2024",
+        "relatedSlug": "post-2"
+    },
+    {
+        "badge": "article",
         "slug": "working-with-react-useeffect-hook",
         "title": "Rendering and Re-Rendering in React",
         "introduction": "In this article, you will learn what happens behind a 're-render' in React, what causes them, how to avoid them, and patterns to consider for optimizing our applications.",
