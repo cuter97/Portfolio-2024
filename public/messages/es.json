@@ -35,14 +35,14 @@
         },
         "cards": {
             "cardOne": {
-                "title": "Desarrollador Full Stack",
-                "company": "TrainingPeek",
-                "linkCompany": "https://trainingpeek.com",
-                "date": "Feb 2024  May 2024",
+                "title": "Desarrollador Full Stack Freelance",
+                "company": "",
+                "linkCompany": "",
+                "date": "Feb 2024  Actualidad",
                 "site": "Rio Negro, Argentina - Remoto",
-                "summary": "Desarrollo y mantenimiento de la aplicación trainingpeek.com utilizando Next.js para el frontend y Node.js para el backend.",
-                "responsibilities": "Desarrollé y diseñé una aplicación web utilizando Next.js para entrenamiento personalizado. :: Implementé el backend para gestionar usuarios y pagos utilizando la API de Mercado Pago. :: Diseñé y desarrollé la interfaz de usuario, asegurando una experiencia fluida y receptiva.",
-                "achievements": "Mejoré el rendimiento de la aplicación, logrando una reducción del 30% en los tiempos de carga de las páginas. :: Integré con éxito la API de Mercado Pago."
+                "summary": "Experiencia como desarrollador Full Stack freelance, creando soluciones web personalizadas para diversos clientes. Especializado en el ciclo completo de desarrollo, desde el diseño de la interfaz hasta la implementación del backend y la integración de servicios de terceros.",
+                "responsibilities": "Concebir, diseñar y desarrollar aplicaciones web completas, abarcando tanto el frontend como el backend. :: Colaborar estrechamente con clientes para transformar sus ideas en soluciones funcionales y escalables. :: Implementar arquitecturas limpias y mantenibles que aseguren la longevidad y la facilidad de futuras expansiones de los proyectos. :: Garantizar la seguridad y la fiabilidad de las aplicaciones, protegiendo los datos de los usuarios y las transacciones.",
+                "achievements": "Mejoré significativamente la experiencia del usuario y el rendimiento de las aplicaciones, como la reducción del 30% en los tiempos de carga en proyectos clave. :: Integré exitosamente diversas APIs y servicios externos, ampliando las funcionalidades de las plataformas y automatizando procesos. :: Entregué múltiples proyectos freelance dentro del plazo y presupuesto, demostrando habilidad para gestionar proyectos de forma autónoma. :: Apliqué mejores prácticas de desarrollo para asegurar un código robusto, eficiente y de fácil escalabilidad."
             },
             "cardTwo": {
                 "title": "Desarrollador Junior Full Stack",
@@ -71,6 +71,7 @@
         "cards": {
             "one": {
                 "title": "Portfolio",
+                "img": "",
                 "links": {
                     "git": "https://github.com/cuter97/Portfolio-2024",
                     "web": ""
@@ -88,6 +89,7 @@
             },
             "two": {
                 "title": "Microservicios",
+                "img": "",
                 "links": {
                     "git": "https://github.com/orgs/Nest-Microservices-dev/repositories",
                     "web": ""
@@ -105,6 +107,7 @@
             },
             "tree": {
                 "title": "TrainingPeek Website",
+                "img": "/images/img-1.webp",
                 "links": {
                     "git": "",
                     "web": "https://trainingpeek.com"
@@ -122,6 +125,7 @@
             },
             "four": {
                 "title": "Shortly API",
+                "img": "/images/img-3.webp",
                 "links": {
                     "git": "https://github.com/cuter97/shortly-api",
                     "web": "https://shortly-api-eta.vercel.app"
@@ -136,12 +140,30 @@
                     "futureImprovements": "Mejorar la experiencia del usuario con características adicionales como análisis de enlaces y URLs acortadas personalizadas.",
                     "technologies": "reactjs :: sass :: css"
                 }
+            },
+            "five": {
+                "title": "Artesano del sur",
+                "img": "/images/img-2.webp",
+                "links": {
+                    "git": "",
+                    "web": "https://www.artesanodelsur.com"
+                },
+                "summary": "Sitio web artesanal bilingüe para mostrar productos hechos a mano en el sur de Argentina.",
+                "content": "Construido con Astro, Tailwind CSS y GSAP. ",
+                "badgets": "astro :: tailwindcss",
+                "info": {
+                    "description": "Este proyecto es un catálogo digital para 'Artesano del Sur', una marca de productos artesanales. El sitio está construido con Astro para optimizar el rendimiento, Tailwind CSS para una maquetación rápida y GSAP para añadir animaciones suaves que refuercen la estética artesanal. El sitio es bilingüe y permite a los visitantes explorar productos únicos hechos a mano.",
+                    "challengesAndSolution": "Implementar una estructura multilenguaje accesible usando rutas dinámicas. :: Lograr animaciones suaves con GSAP sin afectar el rendimiento. :: Aproveché Astro Islands para renderizar solo lo necesario y optimizar tiempos de carga.",
+                    "features": "Diseño responsivo con enfoque en dispositivos móviles :: Animaciones con GSAP para transiciones suaves y llamativas :: Navegación bilingüe :: Secciones como historia, blog y catálogo de productos.",
+                    "futureImprovements": "",
+                    "technologies": "astro :: tailwindcss :: typescript"
+                }
             }
         }
     },
     "Technologies": {
         "h3": "Habilidades",
-        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git :: tailwindcss:: java :: spring_framework :: spring_security :: spring_boot :: maven",
+        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git :: tailwindcss:: java :: maven :: astro :: spring_framework :: spring_security :: spring_boot",
         "skills": {
             "nestjs": {
                 "name": "Nest.js",
@@ -281,6 +303,18 @@
                 "description": "Un lenguaje de programación de alto nivel, basado en clases y orientado a objetos, diseñado para tener la menor cantidad de dependencias de implementación posible.",
                 "joined": "Se unió en enero de 1996"
             },
+            "maven": {
+                "name": "Maven",
+                "@name": "@maven",
+                "description": "Una herramienta de gestión y construcción de proyectos basada en Java, que utiliza un modelo de dependencias y un archivo POM para automatizar tareas comunes.",
+                "joined": "Se unió en julio de 2004"
+            },
+            "astro": {
+                "name": "Astro",
+                "@name": "@astro",
+                "description": "Framework moderno para construir sitios web rápidos centrados en el contenido. Astro ofrece un gran rendimiento por defecto mediante su arquitectura de 'islas', que permite hidratar solo lo necesario.",
+                "joined": "Incorporado en diciembre de 2022"
+            },
             "spring_framework": {
                 "name": "Spring Framework",
                 "@name": "@spring_framework",
@@ -298,12 +332,6 @@
                 "@name": "@spring_boot",
                 "description": "Una herramienta que simplifica la configuración y el desarrollo de aplicaciones Spring, proporcionando un enfoque de arranque rápido y minimalista.",
                 "joined": "Se unió en abril de 2014"
-            },
-            "maven": {
-                "name": "Maven",
-                "@name": "@maven",
-                "description": "Una herramienta de gestión y construcción de proyectos basada en Java, que utiliza un modelo de dependencias y un archivo POM para automatizar tareas comunes.",
-                "joined": "Se unió en julio de 2004"
             }
         }
     },

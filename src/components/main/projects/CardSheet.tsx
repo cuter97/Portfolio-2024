@@ -7,6 +7,7 @@ import { CardSheetInfo } from "./CardSheetInfo"
 
 import { Link, Folder } from "lucide-react"
 import { useTranslations } from "next-intl"
+import Image from "next/image"
 
 interface Props {
     i18nKey: string;
@@ -29,6 +30,16 @@ export const CardSheet = ({ i18nKey }: Props) => {
                     </SheetTitle>
                     <SheetDescription className="text-start">{t('info.description')}</SheetDescription>
                 </SheetHeader>
+                {t('img') &&
+                    <div className="relative w-full aspect-video sm:aspect-[16/9] mt-4">
+                        <Image
+                            src={t('img')}
+                            alt={t('title')}
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+                }
                 <div className="grid gap-4 py-4 text-md">
                     {(t('info.challengesAndSolution') !== '') && <CardSheetInfo title={card('challenge')} description={t('info.challengesAndSolution')} />}
                     {(t('info.features') !== '') && <CardSheetInfo title={card('features')} description={t('info.features')} />}

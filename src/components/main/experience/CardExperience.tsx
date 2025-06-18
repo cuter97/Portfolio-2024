@@ -9,8 +9,8 @@ import { useTranslations } from "next-intl"
 
 interface CardExperienceProps {
     title: string;
-    company: string;
-    linkCompany: string;
+    company?: string;
+    linkCompany?: string;
     date: string;
     site: string;
     summary: string;
@@ -36,14 +36,18 @@ export const CardExperience = ({ title, company, linkCompany, date, site, summar
         <TimeLine date={date}>
             <div className="w-auto rounded-md bg-background md:pl-6 pb-6">
                 <h3 className="text-lg font-medium">{title}
-                    <span className="mx-1">@</span>
-                    <ButtonType
-                        tooltip={`Ver ${company}`}
-                        name={company}
-                        type="link-card"
-                        link={linkCompany}
-                        Icon={<ArrowUpRight className="h-4 w-4 ml-1" />}
-                    />
+                    {(company && linkCompany) && (
+                        <>
+                            <span className="mx-1">@</span>
+                            <ButtonType
+                                tooltip={`Ver ${company}`}
+                                name={company}
+                                type="link-card"
+                                link={linkCompany}
+                                Icon={<ArrowUpRight className="h-4 w-4 ml-1" />}
+                            />
+                        </>
+                    )}
                 </h3>
                 <p className="text-sm text-muted-foreground">{site}</p>
 
@@ -78,7 +82,7 @@ export const CardExperience = ({ title, company, linkCompany, date, site, summar
                         </div>
                     </div>
 
-                    <div className={`absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t dark:from-[#121212] from-[#ffffff] transition-opacity duration-500 ${isExpanded ? 'opacity-0' : 'opacity-100'}`} />
+                    <div className={`absolute bottom-0 left-0 right-0 h-20 bg-gradient-to-t dark:from-[#121212] from-[#faf9f4] transition-opacity duration-500 ${isExpanded ? 'opacity-0' : 'opacity-100'}`} />
                 </div>
 
                 <Button
