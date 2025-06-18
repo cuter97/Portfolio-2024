@@ -35,14 +35,14 @@
         },
         "cards": {
             "cardOne": {
-                "title": "Full Stack Developer",
-                "company": "TrainingPeek",
-                "linkCompany": "https://trainingpeek.com",
-                "date": "Feb 2024  May 2024",
-                "site": "Rio Negro, Argentina - Remote",
-                "summary": "Developed and maintained the trainingpeek.com application using Next.js for the frontend and Node.js for the backend.",
-                "responsibilities": "Developed and designed a web application using Next.js for personalized training. :: Implemented the backend to manage users and payments using the Mercado Pago API. :: Designed and developed the user interface, ensuring a smooth and responsive experience.",
-                "achievements": "Improved application performance, achieving a 30% reduction in page load times. :: Successfully integrated the Mercado Pago API."
+                "title": "Full Stack Developer Freelance",
+                "company": "",
+                "linkCompany": "",
+                "date": "Feb 2024  Present",
+                "site": "Río Negro, Argentina - Remote",
+                "summary": "Experienced Full Stack Developer working freelance, creating personalized web solutions for various clients. I specialize in the complete development cycle, from UI/UX design to backend implementation and third-party service integration.",
+                "responsibilities": "Conceive, design, and develop complete web applications, covering both frontend and backend. :: Collaborate closely with clients to transform their ideas into functional and scalable solutions. :: Implement clean and maintainable architectures to ensure the longevity and ease of future project expansions. :: Ensure the security and reliability of applications, protecting user data and transactions.",
+                "achievements": "Significantly improved user experience and application performance, achieving a 30% reduction in page load times on key projects. :: Successfully integrated various third-party APIs and external services, such as payment gateways, expanding platform functionalities and automating processes. :: Delivered multiple freelance projects within scope, deadline, and budget, demonstrating strong autonomous project management skills. :: Applied best development practices to ensure robust, efficient, and easily scalable code."
             },
             "cardTwo": {
                 "title": "Junior Full Stack Developer",
@@ -71,6 +71,7 @@
         "cards": {
             "one": {
                 "title": "Portfolio",
+                "img": "",
                 "links": {
                     "git": "https://github.com/cuter97/Portfolio-2024",
                     "web": ""
@@ -88,6 +89,7 @@
             },
             "two": {
                 "title": "Microservices",
+                "img": "",
                 "links": {
                     "git": "https://github.com/orgs/Nest-Microservices-dev/repositories",
                     "web": ""
@@ -105,6 +107,8 @@
             },
             "tree": {
                 "title": "TrainingPeek Website",
+                "img": "/images/img-1.webp",
+
                 "links": {
                     "git": "",
                     "web": "https://trainingpeek.com"
@@ -122,6 +126,7 @@
             },
             "four": {
                 "title": "Shortly API",
+                "img": "/images/img-3.webp",
                 "links": {
                     "git": "https://github.com/cuter97/shortly-api",
                     "web": "https://shortly-api-eta.vercel.app"
@@ -136,12 +141,30 @@
                     "futureImprovements": "Enhance the user experience with additional features like link analytics and custom shortened URLs.",
                     "technologies": "reactjs :: sass :: css"
                 }
+            },
+            "five": {
+                "title": "Artesano del sur",
+                "img": "/images/img-2.webp",
+                "links": {
+                    "git": "",
+                    "web": "https://www.artesanodelsur.com"
+                },
+                "summary": "A bilingual artisan website showcasing handmade products from southern Argentina.",
+                "content": "Built with Astro, Tailwind CSS, and GSAP.",
+                "badgets": "astro :: tailwindcss",
+                "info": {
+                    "description": "This project is a digital catalog for 'Artesano del Sur', a brand of handcrafted products. The website is built with Astro to optimize performance, Tailwind CSS for fast layout styling, and GSAP to add smooth animations that complement the artisanal aesthetic. The site is bilingual and allows visitors to explore unique handmade pieces.",
+                    "challengesAndSolution": "Implemented an accessible multilingual structure using dynamic routes. :: Achieved smooth animations with GSAP without compromising performance. :: Leveraged Astro Islands to render only what's needed and improve load times.",
+                    "features": "Responsive design with mobile-first focus :: GSAP animations for smooth and engaging transitions :: Bilingual navigation :: Sections like story, blog, and product catalog.",
+                    "futureImprovements": "",
+                    "technologies": "astro :: tailwindcss :: typescript"
+                }
             }
         }
     },
     "Technologies": {
         "h3": "Skills",
-        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git :: tailwindcss :: java :: spring_framework :: spring_security :: spring_boot :: maven",
+        "mainSkills": "nestjs :: nodejs :: typescript :: reactjs :: nextjs :: docker :: postgresql :: mongodb :: html :: css :: javascript :: expressjs :: graphql :: git :: tailwindcss :: java :: maven :: astro :: spring_framework :: spring_security :: spring_boot",
         "skills": {
             "nestjs": {
                 "name": "Nest.js",
@@ -281,6 +304,18 @@
                 "description": "A high-level, class-based, object-oriented programming language designed to have as few implementation dependencies as possible.",
                 "joined": "Joined in January 1996"
             },
+            "maven": {
+                "name": "Maven",
+                "@name": "@maven",
+                "description": "A project management and build tool for Java that uses a dependency model and a POM file to automate common tasks.",
+                "joined": "Joined in July 2004"
+            },
+            "astro": {
+                "name": "Astro",
+                "@name": "@astro",
+                "description": "A modern frontend framework for building fast, content-focused websites. Astro delivers excellent performance by default using its island architecture and partial hydration.",
+                "joined": "Released in August 2022"
+            },
             "spring_framework": {
                 "name": "Spring Framework",
                 "@name": "@spring_framework",
@@ -298,12 +333,6 @@
                 "@name": "@spring_boot",
                 "description": "A tool that simplifies Spring application setup and development by providing a fast, minimalist approach to configuration.",
                 "joined": "Joined in April 2014"
-            },
-            "maven": {
-                "name": "Maven",
-                "@name": "@maven",
-                "description": "A project management and build tool for Java that uses a dependency model and a POM file to automate common tasks.",
-                "joined": "Joined in July 2004"
             }
         }
     },

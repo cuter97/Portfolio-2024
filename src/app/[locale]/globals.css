@@ -2,12 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
     :root {
         --background: #121212;
         --foreground: #ededed;
     }
-}
+} */
 
 @layer utilities {
     .text-balance {
@@ -24,7 +24,7 @@
 @layer base {
     :root {
         --gray: 0 0% 59%;
-        --background: 0 0% 100%;
+        --background: 50 40% 97;
 
         --foreground: 240 10% 3.9%;
         --card: 0 0% 100%;

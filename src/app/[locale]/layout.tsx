@@ -32,7 +32,7 @@ export default async function RootLayout({
         <html lang={locale}>
             <body
                 className={cn(
-                    "antialiased dark:bg-background",
+                    "antialiased bg-background dark:bg-background",
                     interRoboto.className
                 )}
             >

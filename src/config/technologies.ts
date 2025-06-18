@@ -1,4 +1,4 @@
-import { SiApachemaven, SiSpringsecurity, SiSpringboot, SiSpring, SiNestjs, SiNextdotjs, SiMongodb, SiExpress, SiGraphql, SiI18Next, SiShadcnui, SiFramer, SiNatsdotio, SiMercadopago, SiNextui, SiTailwindcss } from "react-icons/si";
+import { SiAstro, SiApachemaven, SiSpringsecurity, SiSpringboot, SiSpring, SiNestjs, SiNextdotjs, SiMongodb, SiExpress, SiGraphql, SiI18Next, SiShadcnui, SiFramer, SiNatsdotio, SiMercadopago, SiNextui, SiTailwindcss } from "react-icons/si";
 import { FaNode, FaReact, FaDocker, FaHtml5, FaCss3Alt, FaGitAlt, FaSass, FaJava } from "react-icons/fa";
 import { BiLogoTypescript, BiLogoPostgresql } from "react-icons/bi";
 import { IoLogoJavascript } from "react-icons/io5";
@@ -118,5 +118,9 @@ export const technologies: Record<string, Technology> = {
     maven: {
         icon: SiApachemaven,
         color: 'group-hover:text-[#bf4230]',
+    },
+    astro: {
+        icon: SiAstro,
+        color: 'group-hover:text-primary',
     }
 };
